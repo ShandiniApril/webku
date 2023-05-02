@@ -80,8 +80,8 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/materi">Materi</a></li>
-      <li><a href="/quiz">Quiz</a></li>
+      <li><a href="/materis">Materi</a></li>
+      <li><a href="/quizs">Quiz</a></li>
       <li><a href="/result">Result</a></li>
       <li><a href="/project">Project</a></li>
       <li><a href="/exam">Exam</a></li>

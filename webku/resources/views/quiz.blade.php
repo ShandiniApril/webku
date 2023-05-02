@@ -3,7 +3,7 @@
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         <!-- Page content here -->
-        <label for="my-drawer" class="btn btn-primary drawer-button mx-auto">Open Materi</label>
+        <label for="my-drawer" class="btn btn-primary drawer-button mx-auto">Open Quiz</label>
       </div> 
       <div class="drawer-side">
         <label for="my-drawer" class="drawer-overlay"></label>

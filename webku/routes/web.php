@@ -27,9 +27,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/materis', function () {
+    return view('materis');
+})->name('materis');
+
 Route::get('/materi', function () {
     return view('materi');
 })->name('materi');
+
+Route::get('/quizs', function () {
+    return view('quizs');
+})->name('quizs');
 
 Route::get('/quiz', function () {
     return view('quiz');
