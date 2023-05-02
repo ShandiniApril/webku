@@ -12,9 +12,10 @@
             
         </div>
         <div class="divider divider-horizontal"></div>
-        <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center py-4">
+        <div class="grid flex-grow card bg-base-300 rounded-box place-items-center py-4">
             
-            <p class="pt-4 text-center">I am a student at Universitas Pendidikan Indonesia <br> majoring Computer Science Education.</p>
+            <p class="font-bold py-4">About | Developer</p> 
+            <p class="text-center">I am a student at Universitas Pendidikan Indonesia majoring Computer Science Education.</p>
             <p class="font-semibold py-4">You can contact me at:</p>  
             
             <div class="grid grid-flow-col gap-4 pb-4">
@@ -66,7 +67,7 @@
                 </tr>
                 <tr>
                     <td class="align-text-top">3.</td>
-                    <td>Jika sudah belajar pada halaman materi,silahkan klik halaman quiz dan selamat mengerjakan soal yang terdapat disana.</td>
+                    <td>Jika sudah belajar pada halaman materi, silahkan klik halaman quiz dan selamat mengerjakan soal yang terdapat disana.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">4.</td>
@@ -74,7 +75,7 @@
                 </tr>
                 <tr>
                     <td class="align-text-top">5.</td>
-                    <td>Untuk pengerjaan project, anda kerjakan secara berkelompok di halaman project pada navbar. Pada halaman ini terdapat panduan pengerjaan, forum diskusi dan laporan tugas.</td>
+                    <td>Untuk pengerjaan project, anda kerjakan secara berkelompok di halaman project. Pada halaman ini terdapat panduan pengerjaan, forum diskusi dan laporan tugas.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">6.</td>
