@@ -68,8 +68,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-      <li><a href="/materi">Materi</a></li>
-      <li><a href="/quiz">Quiz</a></li>
+      <li><a href="/materis">Materi</a></li>
+      <li><a href="/quizs">Quiz</a></li>
       <li><a href="/result">Result</a></li>
       <li><a href="/project">Project</a></li>
       <li><a href="/exam">Exam</a></li>

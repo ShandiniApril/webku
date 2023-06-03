@@ -1,8 +1,11 @@
 <x-app-layout>
-    <div class="flex flex-col border-opacity-50 mx-20 my-12 sm:px-6 lg:px-4">
-        <div class="grid flex-grow card bg-base-300 rounded-box place-items-center py-4">
-            <p class="font-bold py-4">Petunjuk Pengerjaan Project</p> 
-            <table>
+    <div class="flex flex-col border-opacity-50 mx-auto my-12 p-4 max-w-screen-xl sm:px-6 lg:px-4">
+        <div>
+            <p class="font-bold text-center text-2xl pb-8">Project WebKu</p>
+          </div>
+        <div class="grid flex-grow card bg-base-300 rounded-box place-items-center sm:py-6 lg:py-2">
+            <p class="font-bold p-4">Petunjuk Pengerjaan Project</p> 
+            <table class="mx-2">
                 <tr>
                     <td class="align-text-top">1.</td>
                     <td>Melihat pembagian kelompok yang telah ditetapkan, file bisa diunduh <a href="" class="hover">di sini.</a></td>

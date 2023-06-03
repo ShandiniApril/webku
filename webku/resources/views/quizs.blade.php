@@ -1,24 +1,91 @@
 <x-app-layout>
-    <div class="drawer">
-        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content">
-          <!-- Page content here -->
-          <label for="my-drawer" class="btn btn-primary drawer-button mx-auto">Open Quiz</label>
-        </div> 
-        <div class="drawer-side">
-          <label for="my-drawer" class="drawer-overlay"></label>
-          <ul class="menu p-4 w-80 bg-base-100 text-base-content">
-            <!-- Sidebar content here -->
-            <li><a>1. Pengenalan Web HTML</a></li>
-            <li><a>2. Jenis-Jenis Text Editor</a></li>
-            <li><a>3. Struktur dan Syntax HTML</a></li>
-            <li><a>4. Membuat List pada HTML</a></li>
-            <li><a>5. Membuat Tabel pada HTML</a></li>
-            <li><a>6. Menambahkan Media pada HTML</a></li>
-            <li><a>7. Membuat Link pada HTML</a></li>
-            <li><a>8. Menggunakan CSS pada HTML</a></li>
-            <li><a>9. Mengenal Bootstrap</a></li>
-          </ul>
-        </div>
+  <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-12 p-4 sm:px-6 lg:px-4">
+    <div>
+      <p class="font-bold text-center text-2xl pb-8">Quiz WebKu</p>
     </div>
-  </x-app-layout>
+    <!-- quiz 1 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        1. Pengenalan CSS
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- quiz 2 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        2. Penulisan CSS
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- quiz 3 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        3. Jenis-Jenis Selektor
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- quiz 4 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        4. Font dan Text Formatting
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- quiz 5 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        5. Warna dan Background
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- quiz 6 -->
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="checkbox" /> 
+      <div class="collapse-title text-xl font-medium">
+        6. Box Model
+      </div>
+      <div class="collapse-content"> 
+        <div class="mx-8">
+          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+          <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</x-app-layout>
