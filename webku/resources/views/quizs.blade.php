@@ -6,7 +6,7 @@
     <!-- quiz 1 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         1. Pengenalan CSS
       </div>
       <div class="collapse-content"> 
@@ -20,7 +20,7 @@
     <!-- quiz 2 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         2. Penulisan CSS
       </div>
       <div class="collapse-content"> 
@@ -34,7 +34,7 @@
     <!-- quiz 3 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         3. Jenis-Jenis Selektor
       </div>
       <div class="collapse-content"> 
@@ -48,7 +48,7 @@
     <!-- quiz 4 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         4. Font dan Text Formatting
       </div>
       <div class="collapse-content"> 
@@ -62,7 +62,7 @@
     <!-- quiz 5 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         5. Warna dan Background
       </div>
       <div class="collapse-content"> 
@@ -76,7 +76,7 @@
     <!-- quiz 6 -->
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
-      <div class="collapse-title text-xl font-medium">
+      <div class="collapse-title font-medium">
         6. Box Model
       </div>
       <div class="collapse-content"> 

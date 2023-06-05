@@ -46,8 +46,8 @@
               Kelompok 1
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-                <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+                <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         <div class="collapse bg-base-200 mt-4">
@@ -56,8 +56,8 @@
                 Kelompok 2
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         <div class="collapse bg-base-200 mt-4">
@@ -66,8 +66,8 @@
               Kelompok 3
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         <div class="collapse bg-base-200 mt-4">
@@ -76,8 +76,8 @@
               Kelompok 4
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         <div class="collapse bg-base-200 mt-4">
@@ -86,8 +86,8 @@
               Kelompok 5
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         <div class="collapse bg-base-200 mt-4">
@@ -96,8 +96,8 @@
               Kelompok 6
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/quiz"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/quiz"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         

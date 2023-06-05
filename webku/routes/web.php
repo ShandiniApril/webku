@@ -39,10 +39,6 @@ Route::get('/materis', function () {
     return view('materis');
 })->name('materis');
 
-Route::get('/materi', function () {
-    return view('materi');
-})->name('materi');
-
 Route::get('/quizs', function () {
     return view('quizs');
 })->name('quizs');
@@ -58,6 +54,10 @@ Route::get('/result', function () {
 Route::get('/project', function () {
     return view('project');
 })->name('project');
+
+Route::get('/submitProject', function () {
+    return view('submitProject');
+})->name('submitProject');
 
 Route::get('/exam', function () {
     return view('exam');
