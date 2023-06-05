@@ -89,6 +89,6 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a class="btn">Get started</a>
+    <a href="/login" class="btn">Login</a>
   </div>
 </div>
