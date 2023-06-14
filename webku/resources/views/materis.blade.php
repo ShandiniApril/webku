@@ -11,17 +11,26 @@
         1. Pengenalan CSS
       </div>
       <div class="collapse-content"> 
-        <p>Highlight: Pengertian CSS, Fungsi CSS, Sejarah dan Perkembangan CSS</p>
-        <br>
-        <div class="flex flex-col w-full lg:flex-row">
-          <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
-            <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-          </div> 
-          <div class="divider lg:divider-horizontal"></div> 
-          <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
-            <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+        <div class="alert">
+          <h1>Enter the code!</h1>
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+          <div>
+            <button class="btn btn-sm btn-primary">Enter</button>
+          </div>
+        </div>
+        <div class="active">
+          <p>Highlight: Pengertian CSS, Fungsi CSS, Sejarah dan Perkembangan CSS</p>
+          <br>
+          <div class="flex flex-col w-full lg:flex-row">
+            <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
+              <!-- Element Video -->
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </div> 
+            <div class="divider lg:divider-horizontal"></div> 
+            <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
+              <!-- Element pdf -->
+              <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            </div>
           </div>
         </div>
       </div>
