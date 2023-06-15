@@ -10,8 +10,8 @@
         1. Pengenalan CSS
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
-          <a href="/quiz"><button class="btn btn-primary">Start</button></a>
+        <div class="mx-6">
+          <a href="/quiz1"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
       </div>
@@ -21,10 +21,10 @@
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
       <div class="collapse-title font-medium">
-        2. Penulisan CSS
+        2. Sintaks dan Selektor CSS
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
+        <div class="mx-6">
           <a href="/quiz"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
@@ -35,10 +35,10 @@
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
       <div class="collapse-title font-medium">
-        3. Jenis-Jenis Selektor
+        3. Cara Penulisan CSS
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
+        <div class="mx-6">
           <a href="/quiz"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
@@ -52,7 +52,7 @@
         4. Font dan Text Formatting
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
+        <div class="mx-6">
           <a href="/quiz"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
@@ -66,7 +66,7 @@
         5. Warna dan Background
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
+        <div class="mx-6">
           <a href="/quiz"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
@@ -80,7 +80,7 @@
         6. Box Model
       </div>
       <div class="collapse-content"> 
-        <div class="mx-8">
+        <div class="mx-6">
           <a href="/quiz"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>

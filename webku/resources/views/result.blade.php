@@ -1,5 +1,5 @@
 <x-app-layout>
-  <div class="flex flex-col mx-auto border-opacity-50 max-w-screen-lg p-4 sm:px-6 lg:px-4">
+  <div class="flex flex-col mx-auto border-opacity-50 w-full max-w-screen-lg p-4 sm:px-6 lg:px-4">
     <div class="grid flex-grow card bg-base-100 rounded-box place-items-center py-8">
       <div>
         <p class="font-bold text-center text-2xl">Peringkat 3 Besar Siswa WebKu</p>
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row mx-auto my-4 max-w-screen-lg p-4 sm:px-6 lg:px-4"> 
+      <div class="flex flex-col lg:flex-row mx-auto my-4 p-4 sm:px-6 lg:px-4"> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
               <div class="overflow-x-auto">
                   <table class="table w-auto border-2 flex md-inline-flex">
@@ -90,8 +90,9 @@
                       <tr>
                           <th></th>
                           <th>Materi</th>
+                          <th>Ujian Awal</th>
                           <th>Quiz</th>
-                          <th>Exam</th>
+                          <th>Ujian Akhir</th>
                       </tr>
                       </thead>
                       <tbody>
@@ -101,12 +102,14 @@
                           <td>Pengenalan CSS</td>
                           <td>80</td>
                           <td></td>
+                          <td></td>
                       </tr>
                       <!-- row 2 -->
                       <tr>
                           <th>2</th>
                           <td>Penulisan CSS</td>
                           <td>100</td>
+                          <td></td>
                           <td></td>
                       </tr>
                       <!-- row 3 -->
@@ -115,12 +118,14 @@
                           <td>Jenis-Jenis Selektor</td>
                           <td>80</td>
                           <td></td>
+                          <td></td>
                       </tr>
                       <!-- row 4 -->
                       <tr>
                           <th>4</th>
                           <td>Font & Text Formatting</td>
                           <td>100</td>
+                          <td></td>
                           <td></td>
                       </tr>
                       <!-- row 5 -->
@@ -129,12 +134,14 @@
                           <td>Color & Background</td>
                           <td>80</td>
                           <td></td>
+                          <td></td>
                       </tr>
                       <!-- row 6 -->
                       <tr>
                           <th>6</th>
                           <td>Box Model</td>
                           <td>60</td>
+                          <td></td>
                           <td></td>
                       </tr>
                       </tbody>

@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="active">
-          <p>Highlight: Pengertian CSS, Fungsi CSS, Sejarah dan Perkembangan CSS</p>
+          <p>Highlight: Definisi CSS,  Sejarah dan Perkembangan CSS, Fungsi dan Manfaat CSS</p>
           <br>
           <div class="flex flex-col w-full lg:flex-row">
             <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -29,7 +29,7 @@
             <div class="divider lg:divider-horizontal"></div> 
             <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
               <!-- Element pdf -->
-              <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+              <iframe src="https://drive.google.com/file/d/1zjvwJAw2tscu1kT79RtD601YA5TCXWfi/preview" height="300" width="100%" allow="autoplay"></iframe>
             </div>
           </div>
         </div>
@@ -40,10 +40,10 @@
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
       <div class="collapse-title font-medium">
-        2. Penulisan CSS
+        2. Sintaks & Selektor CSS
       </div>
       <div class="collapse-content"> 
-        <p>Highlight: Sintaks CSS, Inline CSS, Internal CSS, Eksternal CSS</p>
+        <p>Highlight: Sintaks CSS, Selektor Tag, Selektor Class, Selektor Id, Selektor Universal</p>
         <br>
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -53,7 +53,7 @@
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            <iframe src="https://drive.google.com/file/d/1fUm9rX5EJOqUXCbFTeZRbwI41mYFC729/preview" height="300" width="100%" allow="autoplay"></iframe>
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@
     <div class="collapse collapse-arrow bg-base-200">
       <input type="checkbox" /> 
       <div class="collapse-title font-medium">
-        3. Jenis-Jenis Selektor
+        3. Cara Penulisan CSS
       </div>
       <div class="collapse-content"> 
-        <p>Highlight: Selektor ID, Selektor Class, Selektor Universal</p>
+        <p>Highlight: Inline CSS, Internal CSS, Eksternal CSS</p>
         <br>
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -76,7 +76,7 @@
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            <iframe src="https://drive.google.com/file/d/1j8M1dVOoHjO1gkWDTN0cQJ2d0BGOs6-j/preview" height="300" width="100%" allow="autoplay"></iframe>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
         4. Font & Text Formatting
       </div>
       <div class="collapse-content"> 
-        <p>Highlight: Font Weight, Font Color, Text Align</p>
+        <p>Highlight: Font Size, Font Family, Text Align, Text Decoration, Text Direction, Text Shadow</p>
         <br>
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -99,7 +99,7 @@
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            <iframe src="https://drive.google.com/file/d/1DRQfWK2pee0UPlwgtoPr8VOmfD9aXZbs/preview" height="300" width="100%" allow="autoplay"></iframe>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
         5. Color & Background
       </div>
       <div class="collapse-content"> 
-        <p>Highlight: RGB, HEX, Gradasi, Background Image, Background filter</p>
+        <p>Highlight: RGB, HEX, Gradasi, Background Image, Background Repeat</p>
         <br>
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -122,7 +122,7 @@
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            <iframe src="https://drive.google.com/file/d/1pgF0WgOpoGkK6SzKghVAm5UoXF2oApRS/preview" height="300" width="100%" allow="autoplay"></iframe>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element pdf -->
-            <embed src="/materi/materi1.pdf" height="300" width="100%" class="mx-auto">
+            <iframe src="https://drive.google.com/file/d/18eBGveJjqDprxxnjAfqJvandDtf-ruFB/preview" height="300" width="100%" allow="autoplay"></iframe>
           </div>
         </div>
       </div>

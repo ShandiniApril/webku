@@ -89,6 +89,17 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a href="/login" class="btn">Login</a>
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img src="/image/maudy.jpg" />
+        </div>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li class="font-bold text-center">Shandini Apriliany</li> <br>
+        <li><a>Profile</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
   </div>
 </div>

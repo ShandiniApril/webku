@@ -43,6 +43,10 @@ Route::get('/quizs', function () {
     return view('quizs');
 })->name('quizs');
 
+Route::get('/quiz1', function () {
+    return view('\quiz\quiz1');
+})->name('quiz1');
+
 Route::get('/quiz', function () {
     return view('quiz');
 })->name('quiz');
@@ -62,6 +66,14 @@ Route::get('/submitProject', function () {
 Route::get('/exam', function () {
     return view('exam');
 })->name('exam');
+
+Route::get('/pretest', function () {
+    return view('\exam\pretest');
+})->name('pretest');
+
+Route::get('/postest', function () {
+    return view('\exam\postest');
+})->name('postest');
 
 Route::get('/about', function () {
     return view('about');
