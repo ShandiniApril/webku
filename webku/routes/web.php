@@ -23,10 +23,11 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
-Route::get('/login', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::middleware('auth')->group(function () {
@@ -37,44 +38,48 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/materis', function () {
     return view('materis');
-})->name('materis');
+})->middleware('auth');
 
 Route::get('/quizs', function () {
     return view('quizs');
-})->name('quizs');
+})->middleware('auth');
 
 Route::get('/quiz1', function () {
     return view('\quiz\quiz1');
-})->name('quiz1');
+})->middleware('auth');
 
 Route::get('/quiz', function () {
     return view('quiz');
-})->name('quiz');
+})->middleware('auth');
 
 Route::get('/result', function () {
     return view('result');
-})->name('result');
+})->middleware('auth');
 
 Route::get('/project', function () {
     return view('project');
-})->name('project');
+})->middleware('auth');
 
 Route::get('/submitProject', function () {
     return view('submitProject');
-})->name('submitProject');
+})->middleware('auth');
 
 Route::get('/exam', function () {
     return view('exam');
-})->name('exam');
+})->middleware('auth');
 
 Route::get('/pretest', function () {
     return view('\exam\pretest');
-})->name('pretest');
+})->middleware('auth');
 
 Route::get('/postest', function () {
     return view('\exam\postest');
-})->name('postest');
+})->middleware('auth');
 
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->middleware('auth');

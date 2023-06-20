@@ -24,7 +24,7 @@
           <div class="flex flex-col w-full lg:flex-row">
             <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
               <!-- Element Video -->
-              <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/-yIDL1kBv2o" title="WebKu | Pengenalan CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div> 
             <div class="divider lg:divider-horizontal"></div> 
             <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -48,7 +48,7 @@
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/usbEp-0AeuU" title="WebKu | Sintaks &amp; Selektor CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div> 
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -71,7 +71,7 @@
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/WKs2yoj7KRs" title="WebKu | Cara Penulisan CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
           </div> 
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -94,7 +94,7 @@
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/7T7SgPiuK-Y" title="WebKu | Font &amp; Text Formatting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div> 
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -117,7 +117,7 @@
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/4al4I7F5s_s" title="WebKu | Color &amp; Background" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div> 
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
@@ -140,7 +140,7 @@
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">
             <!-- Element Video -->
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QUAYXR-e280" title="[Official Trailer] ANIMOSITY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/2AOfxV7bSqg" title="WebKu | Box Model" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div> 
           <div class="divider lg:divider-horizontal"></div> 
           <div class="grid flex-grow card bg-base-300 rounded-box place-items-center">

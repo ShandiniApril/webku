@@ -64,6 +64,7 @@
 <div class="navbar bg-primary">
   <div class="navbar-start">
     <div class="dropdown">
+      @auth
       <label tabindex="0" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
@@ -75,6 +76,7 @@
       <li><a href="/exam">Exam</a></li>
       <li><a href="/about">About</a></li>
       </ul>
+      @endauth
     </div>
     <a class="btn btn-ghost normal-case text-xl" href="/home">WebKu</a>
   </div>
@@ -89,17 +91,26 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-          <img src="/image/maudy.jpg" />
-        </div>
-      </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li class="font-bold text-center">Shandini Apriliany</li> <br>
-        <li><a>Profile</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
+    @auth
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img src="/image/maudy.jpg" />
+          </div>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li class="font-bold text-center">{{ auth()->user()->name }}</li> <br>
+          <li><a href="/profile">Profile</a></li>
+          <li>
+            <form action="/logout" method="post">
+              @csrf
+              <button type="submit">logout</button>
+            </form>
+          </li>
+        </ul>
+      </div> 
+    @else
+      <a href="/login" class="btn">Login</a>
+    @endauth
   </div>
 </div>
