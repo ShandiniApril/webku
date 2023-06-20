@@ -71,12 +71,16 @@
           <div class="stat-figure text-secondary">
             <div class="avatar online">
               <div class="w-16 rounded-full">
-                <img src="/image/maudy.jpg" />
+                @if (auth()->user()->image)
+                  <img src="{{ asset('storage/' . auth()->user()->image) }}" alt="">
+                @else
+                  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                @endif
               </div>
             </div>
           </div>
           <div class="stat-value font-thin">Hello</div>
-          <div class="stat-title font-bold text-primary">Haikal Permana</div>
+          <div class="stat-title font-bold text-primary">{{ auth()->user()->name }}</div>
           <div class="stat-desc">You are the best!</div>
         </div>
       </div>

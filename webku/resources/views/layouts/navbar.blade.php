@@ -95,7 +95,11 @@
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
-            <img src="/image/maudy.jpg" />
+            @if (auth()->user()->image)
+              <img src="{{ asset('storage/' . auth()->user()->image) }}" alt="">
+            @else
+              <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+            @endif
           </div>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
