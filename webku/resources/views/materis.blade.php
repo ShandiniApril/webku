@@ -18,7 +18,7 @@
             <button class="btn btn-sm btn-primary">Enter</button>
           </div>
         </div>
-        <div class="active">
+        <div class="hidden">
           <p>Highlight: Definisi CSS,  Sejarah dan Perkembangan CSS, Fungsi dan Manfaat CSS</p>
           <br>
           <div class="flex flex-col w-full lg:flex-row">

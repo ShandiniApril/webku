@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SubmitProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,9 +61,12 @@ Route::get('/project', function () {
     return view('project');
 })->middleware('auth');
 
-Route::get('/submitProject', function () {
-    return view('submitProject');
-})->middleware('auth');
+// Route::get('/submitProject', function () {
+//     return view('submitProject');
+// })->middleware('auth');
+
+Route::get('/submitProject', [SubmitProjectController::class, 'index'])->middleware('auth');
+Route::post('/submitProject', [SubmitProjectController::class, 'store']);
 
 Route::get('/exam', function () {
     return view('exam');

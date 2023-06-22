@@ -100,7 +100,7 @@
               Kelompok 1
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-                <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+                <a href="https://padlet.com/shandiniapriliany12/kelompok-1-8d4s3bxoov7t27oy"><button class="btn btn-outline">Start Discussion</button></a>
                 <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
@@ -110,7 +110,7 @@
                 Kelompok 2
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
+              <a href="https://padlet.com/shandiniapriliany12/kelompok-1-8d4s3bxoov7t27oy"><button class="btn btn-outline">Start Discussion</button></a>
                 <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
@@ -151,7 +151,7 @@
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
               <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
+              <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
             </div>
         </div>
         
