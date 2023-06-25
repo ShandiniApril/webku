@@ -23,6 +23,17 @@
   -->
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
   
+    <div class="card w-96 bg-neutral text-neutral-content sm:mx-auto">
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Perhatian!</h2>
+        <p>Quiz hanya bisa dilaksanakan 1x. Apakah kamu siap?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Ya</button>
+          <button class="btn btn-ghost">Tidak</button>
+        </div>
+      </div>
+  </div>
+
     <div class="sm:mx-auto sm:w-full sm:max-w-4xl">
       <h2 class="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Quiz 1 WebKu <br> Materi: Pengenalan Dasar CSS</h2>
     </div>

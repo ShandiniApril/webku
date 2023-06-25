@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Quiz1Controller;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ResultController;
 use App\Http\Controllers\SubmitProjectController;
 
 /*
@@ -45,17 +47,18 @@ Route::get('/quizs', function () {
     return view('quizs');
 })->middleware('auth');
 
-Route::get('/quiz1', function () {
-    return view('\quiz\quiz1');
-})->middleware('auth');
+Route::get('/quiz1', [Quiz1Controller::class, 'index']);
+Route::post('/quiz1', [Quiz1Controller::class, 'store']);
+
+// Route::get('/quiz1', function () {
+//     return view('\quiz\quiz1');
+// })->middleware('auth');
 
 Route::get('/quiz', function () {
     return view('quiz');
 })->middleware('auth');
 
-Route::get('/result', function () {
-    return view('result');
-})->middleware('auth');
+Route::get('/result', [ResultController::class, 'index'])->middleware('auth');
 
 Route::get('/project', function () {
     return view('project');

@@ -11,7 +11,7 @@
               </figure>
               <div class="card-body items-center text-center">
                 <p class="card-tittle font-bold">Ranking 1</p>
-                <p>Mark Lee</p>
+                <p>18</p>
                 <div class="card-actions">
                   <button class="btn btn-primary">900</button>
                 </div>
@@ -104,15 +104,15 @@
                       <tr>
                           <th>1</th>
                           <td>Pengenalan CSS</td>
-                          <td>80</td>
                           <td></td>
+                          <td>(quiz1()->score)</td>
                           <td></td>
                       </tr>
                       <!-- row 2 -->
                       <tr>
                           <th>2</th>
                           <td>Penulisan CSS</td>
-                          <td>100</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                       </tr>
@@ -120,7 +120,7 @@
                       <tr>
                           <th>3</th>
                           <td>Jenis-Jenis Selektor</td>
-                          <td>80</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                       </tr>
@@ -128,7 +128,7 @@
                       <tr>
                           <th>4</th>
                           <td>Font & Text Formatting</td>
-                          <td>100</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                       </tr>
@@ -136,7 +136,7 @@
                       <tr>
                           <th>5</th>
                           <td>Color & Background</td>
-                          <td>80</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                       </tr>
@@ -144,7 +144,7 @@
                       <tr>
                           <th>6</th>
                           <td>Box Model</td>
-                          <td>60</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                       </tr>

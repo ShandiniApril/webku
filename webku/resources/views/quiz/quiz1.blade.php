@@ -24,17 +24,6 @@
 
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
 
-    <div class="card w-96 bg-neutral text-neutral-content sm:mx-auto">
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Perhatian!</h2>
-          <p>Quiz hanya bisa dilaksanakan 1x. Apakah kamu siap?</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Ya</button>
-            <button class="btn btn-ghost">Tidak</button>
-          </div>
-        </div>
-    </div>
-
     <div class="sm:mx-auto sm:w-full sm:max-w-4xl">
       <h2 class="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Quiz 1 WebKu <br> Materi: Pengenalan Dasar CSS</h2>
     </div>
@@ -45,55 +34,61 @@
         <div>
           <label for="no1" class="block text-sm font-medium leading-6 text-gray-900">1. Apa yang dimaksud dengan bla?</label>
           <div class="ml-4">
-            <input type="radio" name="radio-2" class="radio radio-primary" /> apa <br>
-            <input type="radio" name="radio-2" class="radio radio-primary" /> agtau <br>
-            <input type="radio" name="radio-2" class="radio radio-primary" /> sapks <br>
-            <input type="radio" name="radio-2" class="radio radio-primary" /> sadj <br>
-            <input type="radio" name="radio-2" class="radio radio-primary" /> shdja <br>
+            <input type="radio" name="no1" class="radio radio-primary" value="a"/> apa <br>
+            <input type="radio" name="no1" class="radio radio-primary" value="b"/> agtau <br>
+            <input type="radio" name="no1" class="radio radio-primary" value="c"/> sapks <br>
+            <input type="radio" name="no1" class="radio radio-primary" value="d"/> sadj <br>
+            <input type="radio" name="no1" class="radio radio-primary" value="e"/> shdja <br>
           </div>
+
+          @error('no1')
+          <span class="text-danger">
+            <strong>{{ $message }}</strong>
+          </span>
+          @enderror
         </div>
 
         <div>
             <label for="no2" class="block text-sm font-medium leading-6 text-gray-900">2. Apa yang dimaksud dengan bla?</label>
             <div class="ml-4">
-              <input type="radio" name="radio-2" class="radio radio-primary" /> apa <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> agtau <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sapks <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sadj <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> shdja <br>
+              <input type="radio" name="no2" class="radio radio-primary" value="a"/> apa <br>
+              <input type="radio" name="no2" class="radio radio-primary" value="b"/> agtau <br>
+              <input type="radio" name="no2" class="radio radio-primary" value="c"/> sapks <br>
+              <input type="radio" name="no2" class="radio radio-primary" value="d"/> sadj <br>
+              <input type="radio" name="no2" class="radio radio-primary" value="e"/> shdja <br>
             </div>
         </div>
 
         <div>
             <label for="no3" class="block text-sm font-medium leading-6 text-gray-900">3. Apa yang dimaksud dengan bla?</label>
             <div class="ml-4">
-              <input type="radio" name="radio-2" class="radio radio-primary" /> apa <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> agtau <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sapks <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sadj <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> shdja <br>
+              <input type="radio" name="no3" class="radio radio-primary" value="a"/> apa <br>
+              <input type="radio" name="no3" class="radio radio-primary" value="b"/> agtau <br>
+              <input type="radio" name="no3" class="radio radio-primary" value="c"/> sapks <br>
+              <input type="radio" name="no3" class="radio radio-primary" value="d"/> sadj <br>
+              <input type="radio" name="no3" class="radio radio-primary" value="e"/> shdja <br>
             </div>
         </div>
 
         <div>
             <label for="no4" class="block text-sm font-medium leading-6 text-gray-900">4. Apa yang dimaksud dengan bla?</label>
             <div class="ml-4">
-              <input type="radio" name="radio-2" class="radio radio-primary" /> apa <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> agtau <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sapks <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> sadj <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> shdja <br>
+              <input type="radio" name="no4" class="radio radio-primary" value="a"/> apa <br>
+              <input type="radio" name="no4" class="radio radio-primary" value="b"/> agtau <br>
+              <input type="radio" name="no4" class="radio radio-primary" value="c"/> sapks <br>
+              <input type="radio" name="no4" class="radio radio-primary" value="d"/> sadj <br>
+              <input type="radio" name="no4" class="radio radio-primary" value="e"/> shdja <br>
             </div>
         </div>
 
         <div>
             <label for="no5" class="block text-sm font-medium leading-6 text-gray-900">5. Apa yang dimaksud dengan bla?</label>
             <div class="ml-6">
-              <input type="radio" name="radio-2" class="radio radio-primary" /> <img src="/image/maudy.jpg" width="300"/> <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> <img src="/image/maudy.jpg" width="300"/> <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> <img src="/image/maudy.jpg" width="300"/> <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> <img src="/image/maudy.jpg" width="300"/> <br>
-              <input type="radio" name="radio-2" class="radio radio-primary" /> <img src="/image/maudy.jpg" width="300"/> <br>
+              <input type="radio" name="no5" class="radio radio-primary" value="a"/> <img src="/image/maudy.jpg" width="300"/> <br>
+              <input type="radio" name="no5" class="radio radio-primary" value="b"/> <img src="/image/maudy.jpg" width="300"/> <br>
+              <input type="radio" name="no5" class="radio radio-primary" value="c"/> <img src="/image/maudy.jpg" width="300"/> <br>
+              <input type="radio" name="no5" class="radio radio-primary" value="d"/> <img src="/image/maudy.jpg" width="300"/> <br>
+              <input type="radio" name="no5" class="radio radio-primary" value="e"/> <img src="/image/maudy.jpg" width="300"/> <br>
             </div>
         </div>
   

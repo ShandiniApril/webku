@@ -23,6 +23,11 @@ This example requires updating your template:
 -->
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
 
+  @if($errors->any())
+    @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+    @endforeach
+  @endif
   @if(session()->has('success'))
     <div class="alert alert-success sm:mx-auto sm:w-full sm:max-w-sm">
       <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -71,7 +76,7 @@ This example requires updating your template:
         <label for="ppt" class="label">
           <span class="label-text">File PPT Presentasi</span>
         </label>
-        <input id="ppt" name="ppt[]" type="file" class="file-input file-input-primary @error('ppt') is-invalid @enderror"/>
+        <input id="ppt" name="ppt" type="file" class="file-input file-input-primary @error('ppt') is-invalid @enderror"/>
         <span class="text-danger">
           @error('ppt')
             {{ $message }}
@@ -83,7 +88,7 @@ This example requires updating your template:
         <label for="project" class="label">
           <span class="label-text">File Project(zip/rar)</span>
         </label>
-        <input id="project" name="project[]" type="file" class="file-input file-input-primary @error('project') is-invalid @enderror"/>
+        <input id="project" name="project" type="file" class="file-input file-input-primary @error('project') is-invalid @enderror"/>
         <span class="text-danger">
           @error('project')
             {{ $message }}
