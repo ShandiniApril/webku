@@ -55,7 +55,7 @@
           </div>
           <div class="stat-title">Total Point</div>
           <div class="stat-value text-primary">870</div>
-          <div class="stat-desc">Ayo terus semangat belajar!</div>
+          <div class="stat-desc">Ayo terus semangat belajar ya!</div>
         </div>
         
         <div class="stat">
@@ -64,7 +64,7 @@
           </div>
           <div class="stat-title">Ranking Kamu</div>
           <div class="stat-value text-secondary">18</div>
-          <div class="stat-desc">You doing great!</div>
+          <div class="stat-desc">Ayo tingkatkan lagi!</div>
         </div>
         
         <div class="stat">
@@ -81,7 +81,7 @@
           </div>
           <div class="stat-value font-thin">Hello</div>
           <div class="stat-title font-bold text-primary">{{ auth()->user()->name }}</div>
-          <div class="stat-desc">You are the best!</div>
+          <div class="stat-desc">Kamu terbaik!</div>
         </div>
       </div>
 
@@ -91,7 +91,7 @@
                   <table class="table w-auto border-2 flex md-inline-flex">
                       <!-- head -->
                       <thead>
-                      <tr>
+                      <tr >
                           <th></th>
                           <th>Materi</th>
                           <th>Ujian Awal</th>

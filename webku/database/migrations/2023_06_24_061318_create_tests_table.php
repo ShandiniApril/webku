@@ -15,12 +15,13 @@ return new class extends Migration
     {
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('test_type')->nullable();
-            $table->char('no1')->nullable();
-            $table->char('no2')->nullable();
-            $table->char('no3')->nullable();
+            $table->integer('test_type');
+            $table->integer('test_code');
+            $table->char('no1');
+            $table->char('no2');
+            $table->char('no3');
             $table->char('no4')->nullable();
             $table->char('no5')->nullable();
             $table->char('no6')->nullable();

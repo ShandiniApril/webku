@@ -17,7 +17,9 @@ class RegisterController extends Controller
     {
         // return $request->file('image')->store('user-images');
 
+        // dd($request);
         $validatedData = $request->validate([
+            'level' => 'required',
             'name' => 'required|string|max:255',
             'email' => ['required', 'email', 'max:255'],
             'password' => 'required|min:3|max:255',

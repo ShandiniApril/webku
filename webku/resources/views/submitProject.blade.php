@@ -45,21 +45,21 @@ This example requires updating your template:
       <div>
         <label for="group" class="block text-sm font-medium leading-6 text-gray-900">Nama Kelompok</label>
         <div class="mt-2">
-          <input id="group" name="group" type="string" autocomplete="group" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6">
+          <input id="group" name="group" type="string" autocomplete="group" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
         </div>
       </div>
 
       <div>
         <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Nama Website</label>
         <div class="mt-2">
-          <input id="title" name="title" type="string" autocomplete="title" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6">
+          <input id="title" name="title" type="string" autocomplete="title" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
         </div>
       </div>
 
       <div>
         <label for="members" class="block text-sm font-medium leading-6 text-gray-900">Anggota Kelompok & Pembagian Kerja (beri tanda * jika tidak ikut mengerjakan)</label>
         <div class="mt-2">
-          <textarea id="members" name="members" type="text" autocomplete="members" required class="textarea block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6"></textarea>
+          <textarea id="members" name="members" type="text" autocomplete="members" required class="textarea block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ This example requires updating your template:
           <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Penjelasan singkat project</label>
         </div>
         <div class="mt-2">
-          <textarea id="description" name="description" type="text" autocomplete="description" required class="textarea block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6"></textarea>
+          <textarea id="description" name="description" type="text" autocomplete="description" required class="textarea block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
         </div>
       </div>
 

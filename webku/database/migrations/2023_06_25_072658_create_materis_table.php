@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ranking', function (Blueprint $table) {
+        Schema::create('materis', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->float('total_score');
-            $table->integer('ranking');
+            $table->integer('no');
+            $table->string('title');
+            $table->string('highlight');
+            $table->string('video');
+            $table->string('pdf');
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ranking');
+        Schema::dropIfExists('materis');
     }
 };

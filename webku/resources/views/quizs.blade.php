@@ -18,7 +18,7 @@
       </div>
       <div class="collapse-content"> 
         <div class="mx-6">
-          <a href="/quiz1"><button class="btn btn-primary">Start</button></a>
+          <a href="/test/quiz1"><button class="btn btn-primary">Start</button></a>
           <a href="/quiz"><button class="btn btn-neutral">Finish</button></a>
         </div>
       </div>

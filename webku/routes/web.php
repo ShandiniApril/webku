@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MateriController;
+use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\Quiz1Controller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ResultController;
@@ -38,6 +40,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/materi', [MateriController::class, 'materi']);
+Route::get('/detailMateri/{materi:id}', [MateriController::class, 'detail_materi']);
+
+Route::get('/test/{question:q_type}', [QuestionController::class, 'showquestion']);
+Route::post('/test/{question:q_type}', [TestController::class, 'checkAnswer']);
 
 Route::get('/materis', function () {
     return view('materis');

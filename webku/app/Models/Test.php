@@ -10,6 +10,8 @@ class Test extends Model
     use HasFactory;
     protected $fillable = [
         'user_id',
+        'test_type',
+        'test_code',
         'no1',
         'no2',
         'no3',

@@ -15,9 +15,11 @@ return new class extends Migration
     {
         Schema::create('scores', function (Blueprint $table) {
             $table->id();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('test_id')->references('id')->on('tests')->onDelete('cascade');
-            $table->integer('test_type');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('test_id')->nullable();
+            $table->foreign('test_id')->references('id')->on('tests');
+            $table->integer('test_code');
             $table->float('score');
             $table->timestamps();
         });
