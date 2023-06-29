@@ -4,27 +4,19 @@
         <p class="font-bold text-center text-2xl pb-8">Materi CSS WebKu</p>
       </div>
       
-      @php
-        $i=1;
-      @endphp
-      
-      @foreach ($materis as $materi)
+      @foreach ($subjects as $subject)
       
       <div class="collapse collapse-arrow bg-base-200">
           <input type="checkbox" /> 
           
           <div class="collapse-title font-medium">
-            @php 
-              echo "$i";
-              $i++;
-            @endphp
-            . {{ $materi->title }}
+            {{ $subject->id }}. {{ $subject->title }}
           </div>
           <div class="collapse-content">
           <div class="mx-6">
-              <p>Highlight: {{ $materi->highlight }}</p>
+              <p>Highlight: {{ $subject->highlight }}</p>
               <br>
-              <a href="/detailMateri/{{ $materi->id }}"><button class="btn btn-primary">Lihat Detail Materi</button></a>
+              <a href="/subjectDetail/{{ $subject->id }}"><button class="btn btn-primary">Lihat Detail Materi</button></a>
           </div>
           </div>
       </div>

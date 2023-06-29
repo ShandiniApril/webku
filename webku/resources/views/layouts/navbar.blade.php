@@ -6,11 +6,21 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-      <li><a href="/materis">Pelajaran</a></li>
-      <li><a href="/quizs">Kuis</a></li>
+      @if (auth()->user()->level=="guru")
+        <li><a href="/student">Siswa</a></li>
+        <li><a href="/addSubject">Materi</a></li>
+        <li><a href="/question">Soal</a></li>
+        <li><a href="/report">Rapot</a></li>
+        <li><a href="/reaction">Reaksi & Komentar</a></li>
+        <li><a href="/reportProyek">Proyek</a></li>
+      @endif
+      @if (auth()->user()->level=="siswa")
+      <li><a href="/subject">Belajar</a></li>
+      <li><a href="/quizes">Kuis</a></li>
+      <li><a href="/project">Proyek</a></li>
       <li><a href="/result">Hasil Belajar</a></li>
-      <li><a href="/project">Pengerjaan Proyek</a></li>
       <li><a href="/exam">Ujian</a></li>
+      @endif
       <li><a href="/about">Tentang</a></li>
       </ul>
       @endauth
@@ -19,11 +29,21 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/materis">Pelajaran</a></li>
-      <li><a href="/quizs">Kuis</a></li>
+      @if (auth()->user()->level=="guru")
+        <li><a href="/student">Siswa</a></li>
+        <li><a href="/addSubject">Materi</a></li>
+        <li><a href="/question">Soal</a></li>
+        <li><a href="/report">Rapot</a></li>
+        <li><a href="/reaction">Reaksi & Komentar</a></li>
+        <li><a href="/reportProyek">Proyek</a></li>
+      @endif
+      @if (auth()->user()->level=="siswa")
+      <li><a href="/subject">Belajar</a></li>
+      <li><a href="/quizes">Kuis</a></li>
+      <li><a href="/project">Proyek</a></li>
       <li><a href="/result">Hasil Belajar</a></li>
-      <li><a href="/project">Pengerjaan Proyek</a></li>
       <li><a href="/exam">Ujian</a></li>
+      @endif
       <li><a href="/about">Tentang</a></li>
     </ul>
   </div>

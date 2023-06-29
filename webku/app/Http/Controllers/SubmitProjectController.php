@@ -11,7 +11,7 @@ class SubmitProjectController extends Controller
 {
     public function index()
     {
-        return view('submitProject');
+        return view('student.submitProject');
     }
 
     public function store(Request $request)
