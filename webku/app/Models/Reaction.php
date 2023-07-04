@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Subject;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Reaction extends Model
 {
@@ -17,6 +18,6 @@ class Reaction extends Model
 
     public function subject()
     {
-        return $this->hasMany(Subject::class, 'subject_id', 'id');
+        return $this->belongsTo(Subject::class);
     }
 }

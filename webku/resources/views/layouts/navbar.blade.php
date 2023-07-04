@@ -10,9 +10,9 @@
         <li><a href="/student">Siswa</a></li>
         <li><a href="/addSubject">Materi</a></li>
         <li><a href="/question">Soal</a></li>
-        <li><a href="/report">Rapot</a></li>
+        <li><a href="/report">Rapot Siswa</a></li>
         <li><a href="/reaction">Reaksi & Komentar</a></li>
-        <li><a href="/reportProyek">Proyek</a></li>
+        <li><a href="/reportProyek">Laporan Proyek</a></li>
       @endif
       @if (auth()->user()->level=="siswa")
       <li><a href="/subject">Belajar</a></li>
@@ -33,9 +33,9 @@
         <li><a href="/student">Siswa</a></li>
         <li><a href="/addSubject">Materi</a></li>
         <li><a href="/question">Soal</a></li>
-        <li><a href="/report">Rapot</a></li>
+        <li><a href="/report">Rapot Siswa</a></li>
         <li><a href="/reaction">Reaksi & Komentar</a></li>
-        <li><a href="/reportProyek">Proyek</a></li>
+        <li><a href="/reportProyek">Laporan Proyek</a></li>
       @endif
       @if (auth()->user()->level=="siswa")
       <li><a href="/subject">Belajar</a></li>
@@ -61,7 +61,7 @@
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
           <li class="font-bold text-center">{{ auth()->user()->name }}</li> <br>
-          <li><a href="/profile">Profile</a></li>
+          <li><a href="/profile/{{ auth()->user()->id }}">Profile</a></li>
           <li>
             <form action="/logout" method="post">
               @csrf

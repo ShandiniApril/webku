@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex flex-col border-opacity-50 mx-auto my-12 p-4 max-w-screen-xl sm:px-6 lg:px-4">
+    <div class="flex flex-col border-opacity-50 mx-auto my-6 p-4 max-w-screen-xl sm:px-6 lg:px-4">
         <div>
             <p class="font-bold text-center text-2xl pb-8">Project WebKu</p>
           </div>
@@ -94,66 +94,21 @@
         <div class="divider"></div>
         <p class="font-bold p-4 text-center">Link Pengerjaan Kelompok</p>
 
+        @foreach ($groups as $group)
         <div class="collapse bg-base-200 mt-4">
             <input type="checkbox" class="peer" /> 
             <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-              Kelompok 1
+              {{ $group->name }}
             </div>
             <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-                <a href="https://padlet.com/shandiniapriliany12/kelompok-1-8d4s3bxoov7t27oy"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
+              <div>
+                <a href="{{ $group->assignment }}"><button class="btn btn-neutral">Diskusi</button></a>
+                <a href="/projectReaction"><button class="btn btn-outline">Reaksi</button></a>
+                <a href="/submitProject"><button class="btn btn-neutral">Submit</button></a>
+              </div>
             </div>
         </div>
-        <div class="collapse bg-base-200 mt-4">
-            <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-                Kelompok 2
-            </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="https://padlet.com/shandiniapriliany12/kelompok-1-8d4s3bxoov7t27oy"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
-            </div>
-        </div>
-        <div class="collapse bg-base-200 mt-4">
-            <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-              Kelompok 3
-            </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
-            </div>
-        </div>
-        <div class="collapse bg-base-200 mt-4">
-            <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-              Kelompok 4
-            </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
-            </div>
-        </div>
-        <div class="collapse bg-base-200 mt-4">
-            <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-              Kelompok 5
-            </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
-                <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
-            </div>
-        </div>
-        <div class="collapse bg-base-200 mt-4">
-            <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
-              Kelompok 6
-            </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <a href="/submitProject"><button class="btn btn-outline">Start Discussion</button></a>
-              <a href="/submitProject"><button class="btn btn-neutral">Submit Project</button></a>
-            </div>
-        </div>
+        @endforeach
         
     </div>
 </x-app-layout>

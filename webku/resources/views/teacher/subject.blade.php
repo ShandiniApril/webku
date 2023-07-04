@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex flex-col border-opacity-50 mx-auto my-12 p-4 max-w-screen-xl sm:px-2 lg:px-4">
+    <div class="flex flex-col border-opacity-50 mx-auto my-6 p-4 max-w-screen-xl sm:px-2 lg:px-4">
         <div>
             <p class="font-bold text-center text-2xl pb-8">Halaman Materi Guru</p>
         </div>
@@ -17,9 +17,12 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <?php 
+                        $i=1;
+                    ?>
                     @foreach ($subjects as $subject)
                     <tr>
-                        <td>{{ $subject->id }}</td>
+                        <td>{{ $i++ }}</td>
                         <td>{{ $subject->title }}</td>
                         <td>{{ $subject->highlight }}</td>
                         <td>{{ $subject->video }}</td>

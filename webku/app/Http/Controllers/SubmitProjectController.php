@@ -23,26 +23,10 @@ class SubmitProjectController extends Controller
             'title' => 'required|string|max:255',
             'members' => 'required|string',
             'description' => 'required|string',
-            'ppt' => 'required',
-            'project' => 'required'
+            'ppt' => 'required|string',
+            'project' => 'required|string'
         ]);
 
-        if ($request->file('ppt')) {
-            // $data = Storage::putFile('submitProject-ppt', $request->file('ppt'));
-            // $data['ppt'] = $request->file('ppt')->store('submitProject-ppt');
-            $data['ppt'] = $request->file('ppt')->storeAs(
-                'submitProject-ppt',
-                $request->user()->id
-            );
-        }
-
-        if ($request->file('project')) {
-            // $data['project'] = $request->file('project')->store('submitProject-project');
-            $data['project'] = $request->file('project')->storeAs(
-                'submitProject-project',
-                $request->user()->id
-            );
-        }
         // dd($data);
         SubmitProject::insert($data);
 

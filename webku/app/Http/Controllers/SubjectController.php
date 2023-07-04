@@ -30,7 +30,6 @@ class SubjectController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         $data = $request->validate([
             'title' => 'required|string',
             'highlight' => 'required|string',
@@ -38,7 +37,6 @@ class SubjectController extends Controller
             'pdf' => 'required|string',
         ]);
 
-        // dd($data);
         Subject::insert($data);
 
         return back()->with('success', 'Materi berhasil ditambahkan!');

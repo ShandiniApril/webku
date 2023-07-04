@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-12 p-4 sm:px-6 lg:px-4">
+    <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-6 p-4 sm:px-6 lg:px-4">
       <div>
         <p class="font-bold text-center text-2xl pb-8">Materi CSS WebKu</p>
       </div>

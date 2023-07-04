@@ -25,9 +25,23 @@
                   <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formulir Registrasi WebKu</h2>
                 </div>
               
-                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                  <form class="space-y-6" action="/register" method="POST" enctype="multipart/form-data">
-                    @csrf
+                  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form class="space-y-6" action="/register" method="POST" enctype="multipart/form-data">
+                      @csrf
+
+                      <div>
+                        <div class="flex items-center justify-between">
+                          <label for="level" class="block text-sm font-medium leading-6 text-gray-900">Level</label>
+                        </div>
+                        <div class="mt-2">
+                          <select name="level" id="level" class="select select-primary w-full">
+                            <option disabled selected>Saya membuat akun sebagai</option>
+                            <option value="guru">Guru</option>
+                            <option value="siswa">Siswa</option>
+                          </select>
+                        </div>
+                      </div>
+
                     <div>
                         <div class="flex items-center justify-between">
                           <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Nama (Tulis nama lengkap)</label>
@@ -53,24 +67,11 @@
                       </div>
                     </div>
             
-                    <div>
-                        <div class="flex items-center justify-between">
-                          <label for="level" class="block text-sm font-medium leading-6 text-gray-900">Level</label>
-                        </div>
-                        <div class="mt-2">
-                          <select name="level" id="level" class="select select-primary w-full">
-                            <option disabled selected>Saya membuat akun sebagai</option>
-                            <option value="guru">Guru</option>
-                            <option value="siswa">Siswa</option>
-                          </select>
-                        </div>
-                    </div>
-            
                     <div class="form-control">
                       <label for="image" class="label">
                         <span class="label-text">Foto Profil</span>
                       </label>
-                      <input id="image" name="image" type="file" required class="file-input file-input-primary @error('image') is-invalid @enderror"/>
+                      <input id="image" name="image" type="file" class="file-input file-input-primary @error('image') is-invalid @enderror"/>
                       @error('image')
                           <div class="invalid-feedback">
                             {{ $message }}
@@ -79,7 +80,7 @@
                     </div>
               
                     <div>
-                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6">Daftar</button>
+                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mt-12 text-sm font-semibold leading-6">Daftar</button>
                     </div>
                   </form>
               

@@ -17,7 +17,6 @@ class RegisterController extends Controller
     {
         // return $request->file('image')->store('user-images');
 
-        // dd($request);
         $validatedData = $request->validate([
             'level' => 'required',
             'name' => 'required|string|max:255',
@@ -33,8 +32,6 @@ class RegisterController extends Controller
         $validatedData['password'] = Hash::make($validatedData['password']);
 
         User::create($validatedData);
-
-        //$request->session()->flash('success', 'Registration sucessfull! Please login!'); ->with('success', 'Registration sucessfull! Please login!')
 
         return redirect('/login')->with('success', 'Registration sucessfull! Please login!');
     }

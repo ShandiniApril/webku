@@ -1,16 +1,16 @@
 <x-app-layout>
 
-<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+<div class="flex min-h-full flex-col justify-center px-6 my-6 lg:px-8">
 
   <div class="sm:mx-auto sm:w-full sm:max-w-4xl">
-    <h2 class="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">{{ $test[0]->q_type }}</h2>
+    <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"> Quiz Webku <br> {{ $quiz[0]->title }}</h2>
   </div>
 
   <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-4xl">
     <form class="space-y-6" action="#" method="POST">
       @csrf
 
-      @foreach ($test as $item)
+      @foreach ($quiz as $item)
         <div>
             
           <p class="font-bold text-primary"> Soal {{ $item->no }} </p>
@@ -26,7 +26,7 @@
       @endforeach
 
       <div>
-        <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white">Submit</button>
+        <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mb-8 text-sm font-semibold leading-6 text-white">Submit</button>
       </div>
 
     </form>

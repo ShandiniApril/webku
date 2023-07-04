@@ -13,15 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reactions', function (Blueprint $table) {
+        Schema::create('result_quizes', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->string('slug')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->unsignedBigInteger('subject_id')->nullable();
-            $table->foreign('subject_id')->references('id')->on('subjects');
-            $table->string('subject');
-            $table->string('expression');
-            $table->text('comment');
+            $table->string('no1');
+            $table->string('no2');
+            $table->string('no3');
+            $table->string('no4');
+            $table->string('no5');
+            $table->float('score');
             $table->timestamps();
         });
     }
@@ -33,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reactions');
+        Schema::dropIfExists('result_quizes');
     }
 };

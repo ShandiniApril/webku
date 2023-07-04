@@ -1,5 +1,5 @@
 <x-app-layout>
-  <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-12 p-4 sm:px-6 lg:px-4">
+  <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-6 p-4 sm:px-6 lg:px-4">
 
     <p class="font-bold text-center text-2xl pb-8">{{ $subject->title }}</p>
 
@@ -17,30 +17,32 @@
       </div>
       
       {{-- form --}}
-      <div class="mt-2 mx-2 sm:w-full sm:max-w-lg">
+      <div class="mx-2 sm:w-full sm:max-w-lg">
         <form class="space-y-6" action="#" method="POST">
-          @csrf  
+          @csrf 
+          <input style="visibility: hidden" name="subject_id" value="{{ $subject->id }}">
           <div>
             <label for="expression" class="text-sm font-bold text-gray-900 text-center">My Expression</label>
             <p style="font-size:50px">&#129321; &#129299; &#128513; &#129300; &#129327; &#128557;</p>
             <div class="mx-4 space-x-14">
               <input type="radio" name="expression" class="radio radio-primary" value="Semangat"/>
               <input type="radio" name="expression" class="radio radio-primary" value="Fokus"/>
-              <input type="radio" name="expression" class="radio radio-primary" value="So-so"/>
-              <input type="radio" name="expression" class="radio radio-primary" value="Pusing"/>
-              <input type="radio" name="expression" class="radio radio-primary" value="Duar"/>
+              <input type="radio" name="expression" class="radio radio-primary" value="Biasa saja"/>
+              <input type="radio" name="expression" class="radio radio-primary" value="Bingung"/>
+              <input type="radio" name="expression" class="radio radio-primary" value="Berpikir keras"/>
               <input type="radio" name="expression" class="radio radio-primary" value="Nangis"/>
             </div>
-            <p>Semangat - Fokus - Biasa Saja - Pusing - Berpikir Keras - Nangis</p>
+            <p>Semangat - Fokus - Biasa Saja - Bingung - Berpikir Keras - Nangis</p>
           </div>
           <div>
             <label for="comment" class="block text-sm font-bold leading-6 text-gray-900">Tanggapan terhadap materi dan ilmu yang didapat</label>
             <div class="mt-2">
-              <textarea id="comment" name="comment" type="text" autocomplete="comment" required class="textarea block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
+              <textarea id="comment" name="comment" type="text" autocomplete="comment" required class="textarea block w-full rounded-md border-0 pt-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
             </div>
           </div>
+          <input style="visibility: hidden" name="subject" value="{{ $subject->title }}"> 
           <div>
-            <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md my-4 text-sm font-semibold leading-6 text-white">Submit</button>
+            <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md mb-4 text-sm font-semibold leading-6 text-white">Submit</button>
           </div>
 
           @if($errors->any())
@@ -49,7 +51,7 @@
             @endforeach
           @endif
           @if(session()->has('success'))
-            <div class="alert alert-success sm:mx-auto sm:w-full sm:max-w-sm">
+            <div class="alert alert-success sm:mx-auto sm:w-full sm:max-w-sm mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               <span class="text-start">{{ session('success') }}</span>
             </div>
@@ -88,8 +90,6 @@
         @endif
         
       </div>
-      
     </div>
-    
   </div>
 </x-app-layout>

@@ -26,11 +26,6 @@ class HomeController extends Controller
         return view('teacher.reportProject');
     }
 
-    public function study()
-    {
-        return view('student.subject');
-    }
-
     public function quizes()
     {
         return view('student.quizes');
