@@ -63,7 +63,6 @@ class ExamController extends Controller
             $data->optionE = $request->file('optionE')->getClientOriginalName();
             $data->save();
         }
-
         return back()->with('success', 'Soal ujian berhasil ditambahkan!');
     }
 }

@@ -23,16 +23,9 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php 
-                        $i=1;
-                    ?>
                     @foreach ($students as $student)
                     <tr>
-                        <td>
-                        {{$i++}}
-                        </td>
-                        {{-- <td><img src="/storage/user-images/{{ $student->image }}" alt=""></td> --}}
-                        {{-- <img src="{{ asset('storage/' . auth()->user()->image) }}" alt=""> --}}
+                        <td>{{ $loop->iteration }}</td>
                         <td><img class="h-20 w-auto" src="{{ asset('storage/' . $student->image) }}" /></td>
                         <td>{{ $student->name }}</td>
                         <td>{{ $student->email }}</td>

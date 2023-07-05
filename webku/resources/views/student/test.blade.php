@@ -18,19 +18,19 @@
               <label for="{{ $item->no }}" class="block text-lg font-medium leading-6 text-gray-900"> {{ $item->question }} </label>
               @if($item->optionImage == 'yes')
                 <div>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/> <img src="{{ asset('storage/question-images/' . $item->optionA) }}" alt=""> <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/> <img src="{{ asset('storage/question-images/' . $item->optionB) }}" alt=""> <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/> <img src="{{ asset('storage/question-images/' . $item->optionC) }}" alt=""> <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/> <img src="{{ asset('storage/question-images/' . $item->optionD) }}" alt=""> <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/> <img src="{{ asset('storage/question-images/' . $item->optionE) }}" alt=""> <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/>a <img src="{{ asset('storage/question-images/' . $item->optionA) }}" alt=""> <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/>b <img src="{{ asset('storage/question-images/' . $item->optionB) }}" alt=""> <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/>c <img src="{{ asset('storage/question-images/' . $item->optionC) }}" alt=""> <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/>d <img src="{{ asset('storage/question-images/' . $item->optionD) }}" alt=""> <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/>e <img src="{{ asset('storage/question-images/' . $item->optionE) }}" alt=""> <br>
                 </div>
               @else
                 <div>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/> {{ $item->optionA }} <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/> {{ $item->optionB }} <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/> {{ $item->optionC }} <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/> {{ $item->optionD }} <br>
-                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/> {{ $item->optionE }} <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/>a. {{ $item->optionA }} <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/>b. {{ $item->optionB }} <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/>c. {{ $item->optionC }} <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/>d. {{ $item->optionD }} <br>
+                  <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/>e. {{ $item->optionE }} <br>
                 </div>
               @endif
             </div>

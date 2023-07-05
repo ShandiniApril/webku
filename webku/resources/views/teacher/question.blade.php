@@ -26,7 +26,7 @@
                   <tbody>
                     @foreach ($quizes as $quiz)
                     <tr>
-                        <td>{{ $quiz->id }}</td>
+                        <td>{{ $loop->iteration }}</td>
                         <td>{{ $quiz->slug }}</td>
                         <td>{{ $quiz->title }}</td>
                         <td>{{ $quiz->no }}</td>
@@ -121,9 +121,18 @@
                         </div>
                     </div>
                     <div>
-                        <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        <div class="flex items-center justify-between">
+                          <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        </div>
                         <div class="mt-2">
-                        <input id="answer" name="answer" type="string" autocomplete="answer" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
+                          <select name="answer" id="answer" class="select select-primary w-full">
+                            <option disabled selected>Pilih Kunci Jawaban</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                          </select>
                         </div>
                     </div>
                     <div>
@@ -264,9 +273,18 @@
                         </div>
                     </div>
                     <div>
-                        <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        <div class="flex items-center justify-between">
+                          <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        </div>
                         <div class="mt-2">
-                        <input id="answer" name="answer" type="string" autocomplete="answer" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
+                          <select name="answer" id="answer" class="select select-primary w-full">
+                            <option disabled selected>Pilih Kunci Jawaban</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                          </select>
                         </div>
                     </div>
                 
@@ -298,7 +316,7 @@
                 @endif
             
                 <div class="sm:mx-auto sm:w-full sm:max-w-xl">
-                    <form class="space-y-4" action="/question/examNoImage" method="POST" enctype="multipart/form-data">
+                    <form class="space-y-4" action="/question/examImage" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div>
                         <label for="slug" class="block text-sm font-medium leading-6 text-gray-900">Slug (kode materi, tanpa spasi)</label>
@@ -385,12 +403,21 @@
                         @enderror
                     </div>
                     <div>
-                        <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        <div class="flex items-center justify-between">
+                          <label for="answer" class="block text-sm font-medium leading-6 text-gray-900">Kunci Jawaban</label>
+                        </div>
                         <div class="mt-2">
-                        <input id="answer" name="answer" type="string" autocomplete="answer" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
+                          <select name="answer" id="answer" class="select select-primary w-full">
+                            <option disabled selected>Pilih Kunci Jawaban</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                          </select>
                         </div>
                     </div>
-                
+                    <input style="visibility: hidden" name="optionImage" value="yes">
                     <div>
                         <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md p-2 my-6 text-sm font-semibold leading-6 text-white">Submit</button>
                     </div>

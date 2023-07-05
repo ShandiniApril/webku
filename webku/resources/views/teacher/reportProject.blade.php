@@ -14,12 +14,9 @@
                         <th>Link Diskusi</th>
                     </thead>
                     <tbody>
-                    <?php 
-                        $i=1;
-                    ?>
                     @foreach ($groups as $group)
                     <tr>
-                        <td>{{ $i++ }}</td>
+                        <td>{{ $loop->iteration }}</td>
                         <td>{{ $group->name }}</td>
                         <td>{{ $group->members }}</td>
                         <td>{{ $group->assignment }}</td>
@@ -95,12 +92,9 @@
                         <th>Link Proyek</th>
                     </thead>
                     <tbody>
-                        <?php 
-                            $i=1;
-                        ?>
                         @foreach ($projects as $project)
                         <tr>
-                            <td>{{ $i++ }}</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>{{ $project->group }}</td>
                             <td>{{ $project->title }}</td>
                             <td>{{ $project->members }}</td>
@@ -134,13 +128,10 @@
                         <th>Reaksi</th>
                     </thead>
                     <tbody>
-                        <?php 
-                            $i=1;
-                        ?>
                         @foreach ($reactions as $reaction)
                         <tr>
-                            <td>{{ $i++ }}</td>
-                            <td>{{ $reaction->user_id }}</td>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $reaction->user->name }}</td>
                             <td>{{ $reaction->reactAll }}</td>
                             <td>{{ $reaction->emphatize }}</td>
                             <td>{{ $reaction->react1 }}</td>

@@ -16,8 +16,8 @@ class Reaction extends Model
         'comment',
     ];
 
-    public function subject()
+    public function user()
     {
-        return $this->belongsTo(Subject::class);
+        return $this->belongsTo(User::class);
     }
 }

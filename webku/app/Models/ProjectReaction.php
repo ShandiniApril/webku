@@ -22,4 +22,9 @@ class ProjectReaction extends Model
         'react5',
         'reactAll',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

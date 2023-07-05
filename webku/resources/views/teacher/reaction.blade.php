@@ -16,13 +16,10 @@
                     <th>Komentar</th>
                 </thead>
                 <tbody>
-                    <?php 
-                        $i=1;
-                    ?>
                     @foreach ($reactions as $reaction)
                     <tr>
-                        <td>{{ $i++ }}</td>
-                        <td>{{ $reaction->user_id }}</td>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $reaction->user->name }}</td>
                         <td>{{ $reaction->subject }}</td>
                         <td>{{ $reaction->expression }}</td>
                         <td>{{ $reaction->comment }}</td>

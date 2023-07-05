@@ -13,7 +13,7 @@ class ProjectReactionController extends Controller
     public function reportProject()
     {
         return view('teacher.reportProject', [
-            "reactions" => ProjectReaction::all(),
+            "reactions" => ProjectReaction::with('user')->get(),
             "projects" => SubmitProject::all(),
             "groups" => GroupProject::all()
         ]);

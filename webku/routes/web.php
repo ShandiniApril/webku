@@ -52,10 +52,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-// Route::get('/profile', function () {
-//     return view('profile');
-// })->middleware('auth');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile/{id}', [ProfileController::class, 'edit']);
     Route::put('/update/{id}', [ProfileController::class, 'update']);
@@ -69,7 +65,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:guru']], function () {
     Route::get('/question', [QuizesController::class, 'question']);
     Route::post('/question/addQuizes', [QuizesController::class, 'addQuiz']);
     Route::post('/question/examNoImage', [ExamController::class, 'addTestNoImage']);
-    Route::post('/question/examImage', [ExamController::class, 'addTestNoImage']);
+    Route::post('/question/examImage', [ExamController::class, 'addTestWithImage']);
     Route::get('/report', [HomeController::class, 'report']);
     Route::get('/reaction', [ReactionController::class, 'reaction']);
     Route::get('/reportProyek', [ProjectReactionController::class, 'reportProject']);
@@ -94,44 +90,9 @@ Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {
     Route::get('/exam', [HomeController::class, 'exam']);
 });
 
-// Route::get('/belajar', [MateriController::class, 'materi']);
-// Route::get('/detailMateri/{materi:id}', [MateriController::class, 'detail_materi']);
-// Route::get('/test/{question:q_type}', [QuestionController::class, 'showquestion']);
-// Route::post('/test/{question:q_type}', [TestController::class, 'checkAnswer']);
-
 Route::get('/materis', function () {
     return view('materis');
 })->middleware('auth');
 
 Route::get('/quiz1', [Quiz1Controller::class, 'index']);
 Route::post('/quiz1', [Quiz1Controller::class, 'store']);
-
-// Route::get('/quiz1', function () {
-//     return view('\quiz\quiz1');
-// })->middleware('auth');
-
-// Route::get('/quiz', function () {
-//     return view('quiz');
-// })->middleware('auth');
-
-// Route::get('/result', [ResultController::class, 'index'])->middleware('auth');
-
-// Route::get('/project', function () {
-//     return view('project');
-// })->middleware('auth');
-
-// Route::get('/submitProject', function () {
-//     return view('submitProject');
-// })->middleware('auth');
-
-// Route::get('/exam', function () {
-//     return view('exam');
-// })->middleware('auth');
-
-// Route::get('/pretest', function () {
-//     return view('\exam\pretest');
-// })->middleware('auth');
-
-// Route::get('/postest', function () {
-//     return view('\exam\postest');
-// })->middleware('auth');

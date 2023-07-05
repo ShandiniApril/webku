@@ -17,12 +17,9 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php 
-                        $i=1;
-                    ?>
                     @foreach ($subjects as $subject)
                     <tr>
-                        <td>{{ $i++ }}</td>
+                        <td>{{ $loop->iteration }}</td>
                         <td>{{ $subject->title }}</td>
                         <td>{{ $subject->highlight }}</td>
                         <td>{{ $subject->video }}</td>
