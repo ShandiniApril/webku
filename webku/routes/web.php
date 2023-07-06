@@ -21,6 +21,7 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\SubmitProjectController;
 use App\Http\Controllers\TestController;
 use App\Models\GroupProject;
+use App\Models\ResultQuizes;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,13 +49,16 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+// Route::get('/about', function () {
+//     return view('about');
+// })->name('about');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile/{id}', [ProfileController::class, 'edit']);
     Route::put('/update/{id}', [ProfileController::class, 'update']);
+    Route::get('/about', function () {
+        return view('about');
+    });
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:guru']], function () {
@@ -62,11 +66,14 @@ Route::group(['middleware' => ['auth', 'ceklevel:guru']], function () {
     Route::get('/delete/{id}', [ProfileController::class, 'remove']);
     Route::get('/addSubject', [SubjectController::class, 'addSubject']);
     Route::post('/addSubject', [SubjectController::class, 'store']);
-    Route::get('/question', [QuizesController::class, 'question']);
+    Route::get('/question', [QuestionController::class, 'question']);
+    Route::post('/question/noImage', [QuestionController::class, 'addTestNoImage']);
+    Route::post('/question/withImage', [QuestionController::class, 'addTestWithImage']);
+    Route::get('/questionOld', [QuizesController::class, 'question']);
     Route::post('/question/addQuizes', [QuizesController::class, 'addQuiz']);
     Route::post('/question/examNoImage', [ExamController::class, 'addTestNoImage']);
     Route::post('/question/examImage', [ExamController::class, 'addTestWithImage']);
-    Route::get('/report', [HomeController::class, 'report']);
+    Route::get('/report', [ResultQuizesController::class, 'report']);
     Route::get('/reaction', [ReactionController::class, 'reaction']);
     Route::get('/reportProyek', [ProjectReactionController::class, 'reportProject']);
     Route::post('/reportProyek', [GroupProjectController::class, 'store']);
@@ -76,11 +83,10 @@ Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {
     Route::get('/subject', [SubjectController::class, 'subject']);
     Route::get('/subjectDetail/{subject:id}', [SubjectController::class, 'subjectDetail']);
     Route::post('/subjectDetail/{subject:id}', [ReactionController::class, 'store']);
-    Route::get('/test/{exam:slug}', [ExamController::class, 'test']);
-    Route::post('/subjectDetail/{subject:id}', [ReactionController::class, 'store']);
-    Route::get('/quizes', [QuizesController::class, 'quizes']);
+    Route::get('/quizes', [SubjectController::class, 'quizes']);
+    Route::get('/test/{test:slug}', [TestController::class, 'test']);
+    Route::post('/test/submitTest', [TestController::class, 'submitTest']);
     Route::get('/quiz/{quizes:slug}', [QuizesController::class, 'quiz']);
-    Route::post('/quiz/{quizes:slug}', [ResultQuizesController::class, 'checkQuizes']);
     Route::get('/project', [GroupProjectController::class, 'project']);
     Route::get('/projectReaction', [ProjectReactionController::class, 'projectReaction']);
     Route::post('/projectReaction', [ProjectReactionController::class, 'store']);

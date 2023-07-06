@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Exam;
 use App\Models\Quizes;
+use App\Models\ResultQuizes;
 use App\Models\Score;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,7 @@ class QuizesController extends Controller
     public function quizes()
     {
         return view('student.quizes', [
-            "quizes" => Quizes::all()
+            "quizes" => Quizes::select('slug', 'title')->distinct()->get()
         ]);
     }
 
@@ -54,25 +55,36 @@ class QuizesController extends Controller
         return back()->with('success', 'Quiz berhasil ditambahkan!');
     }
 
-    public function checkQuiz(Request $request)
+    public function checkQuizes(Request $request)
     {
+        // dd($request);
+        $quizes = Quizes::select('answer', 'point')->get();
         $total = 0;
+
         $data = $request->validate([
+            'slug' => 'required',
             'no1' => 'required',
             'no2' => 'required',
+            'no3' => 'required',
+            'no4' => 'required',
+            'no5' => 'required',
         ]);
 
-        for ($i = 1; $i <= 5; $i++) {
-            if ($data['no' . $i] == Quizes::answer()) {
-                $total = $total + Quizes::point();
+        foreach ($quizes as $quiz) {
+            for ($i = 1; $i < 5; $i++) {
+                if ($data['no' . $i] == $quiz->answer) {
+                    $total = $total + $quiz->point;
+                }
             }
         }
         $data['user_id'] = Auth::id();
+        // $data['slug'] = 7;
         $data['score'] = $total;
 
+        // dd($data);
         // Tests::create($data);
 
-        Score::create($data);
+        ResultQuizes::create($data);
 
         return redirect('/quizes')->with('success', 'Quiz telah berhasil dikerjakan!');
     }

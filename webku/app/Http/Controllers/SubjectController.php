@@ -14,6 +14,13 @@ class SubjectController extends Controller
         ]);
     }
 
+    public function quizes()
+    {
+        return view('student.quizes', [
+            "subjects" => Subject::all()
+        ]);
+    }
+
     public function subjectDetail(Subject $subject)
     {
         return view('student.subjectDetail', [

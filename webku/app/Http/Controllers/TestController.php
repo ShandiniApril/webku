@@ -10,24 +10,21 @@ use Illuminate\Support\Facades\Auth;
 
 class TestController extends Controller
 {
-    public function checkAnswerQuizes(Request $request)
+    public function test(string $test)
     {
-        $data['user_id'] = Auth::id();
-        $data = Test::create($request->all());
+        return view('student.test', [
+            "test" => Question::where('slug', $test)->get()
+        ]);
+    }
 
-        $total = 0;
-        for ($i = 1; $i <= 5; $i++) {
-            if ($request['no' . $i] == Question::answer()[$i - 1]) {
-                $total = $total + Question::point()[$i - 1];
-            }
-        }
+    public function submitTest(Request $request)
+    {
+        // dd($request);
+        $request['user_id'] = Auth::id();
+        // dd($request);
+        Test::create($request->all());
+        // dd($data);
 
-        // $user['user_id'] = Auth::id();
-        // $type['test_type'] = Question::q_type();
-        // $code['test_code'] = Question::q_code();
-
-        Score::create($data, $total);
-
-        return redirect('/quizs')->with('success', 'Quiz 1 telah berhasil dikerjakan!');
+        return redirect('/result')->with('success', 'Test telah berhasil dikerjakan!');
     }
 }

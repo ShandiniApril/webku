@@ -19,8 +19,7 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('test_id')->nullable();
             $table->foreign('test_id')->references('id')->on('tests');
-            $table->integer('test_code');
-            $table->float('score');
+            $table->integer('score');
             $table->timestamps();
         });
     }

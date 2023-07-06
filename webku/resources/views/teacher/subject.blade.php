@@ -54,7 +54,7 @@
                     @csrf
                     <div>
                         <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Judul Materi</label>
-                        <div>
+                        <div class="mt-2">
                         <input id="title" name="title" type="string" autocomplete="title" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
                         </div>
                     </div>

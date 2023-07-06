@@ -14,17 +14,18 @@
         <div>
             
           <p class="font-bold text-primary"> Soal {{ $item->no }} </p>
-          <label for="{{ $item->no }}" class="block text-lg font-medium leading-6 text-gray-900"> {{ $item->question }} </label>
+          <label for="no{{ $item->no }}" class="block text-lg font-medium leading-6 text-gray-900"> {{ $item->question }} </label>
           <div>
-            <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/> {{ $item->a }} <br>
-            <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/> {{ $item->b }} <br>
-            <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/> {{ $item->c }} <br>
-            <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/> {{ $item->d }} <br>
-            <input type="radio" name="{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/> {{ $item->e }} <br>
+            <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" value="a"/> {{ $item->a }} <br>
+            <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" value="b"/> {{ $item->b }} <br>
+            <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" value="c"/> {{ $item->c }} <br>
+            <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" value="d"/> {{ $item->d }} <br>
+            <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" value="e"/> {{ $item->e }} <br>
           </div>
         </div>
       @endforeach
 
+      <input style="visibility: hidden" name="slug" value="{{ $item->slug }}"> 
       <div>
         <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mb-8 text-sm font-semibold leading-6 text-white">Submit</button>
       </div>

@@ -10,8 +10,8 @@ class Test extends Model
     use HasFactory;
     protected $fillable = [
         'user_id',
-        'test_type',
-        'test_code',
+        'slug',
+        'code',
         'no1',
         'no2',
         'no3',
@@ -42,5 +42,6 @@ class Test extends Model
         'no28',
         'no29',
         'no30',
+        'score',
     ];
 }

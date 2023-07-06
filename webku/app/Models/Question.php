@@ -9,11 +9,12 @@ class Question extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'q_type',
-        'q_code',
+        'slug',
+        'code',
         'no',
-        'q_image',
+        'image',
         'question',
+        'optionImage',
         'a',
         'b',
         'c',
