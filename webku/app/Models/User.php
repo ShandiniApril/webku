@@ -44,6 +44,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function report()
+    {
+        return $this->hasMany(ResultTest::class);
+    }
+
     public function reaction()
     {
         return $this->hasMany(Reaction::class);

@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
             $table->string('title');
             $table->string('highlight');
             $table->string('video');

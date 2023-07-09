@@ -38,6 +38,7 @@ class SubjectController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
+            'code' => 'required|string',
             'title' => 'required|string',
             'highlight' => 'required|string',
             'video' => 'required|string',

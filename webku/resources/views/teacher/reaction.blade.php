@@ -4,8 +4,8 @@
             <p class="font-bold text-center text-2xl pb-8">Halaman Reaksi Belajar Siswa</p>
         </div>
 
-        <div class="mt-6 grid flex-grow card bg-base-300 rounded-box place-items-center sm:py-6 lg:py-6">
-            <p class="font-bold pb-2">Tabel Reaksi Siswa dalam Pengerjaan Proyek</p>
+        <div class="grid flex-grow card bg-base-300 rounded-box place-items-center sm:py-6 lg:py-6">
+            <p class="font-bold pb-2">Tabel Reaksi Siswa dalam Belajar</p>
             <div class="overflow-x-auto lg:max-w-screen-lg py-2">
             <table class="table">
                 <thead>

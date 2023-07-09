@@ -11,7 +11,8 @@ class Reaction extends Model
     use HasFactory;
     protected $fillable = [
         'user_id',
-        'subject_id',
+        'subject',
+        'rating',
         'expression',
         'comment',
     ];

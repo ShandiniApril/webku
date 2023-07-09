@@ -19,6 +19,8 @@
                         <th>Foto</th>
                         <th>Nama</th>
                         <th>Email</th>
+                        <th>Score</th>
+                        <th>Progres</th>
                         <th>Action</th>
                     </tr>
                   </thead>
@@ -29,6 +31,8 @@
                         <td><img class="h-20 w-auto" src="{{ asset('storage/' . $student->image) }}" /></td>
                         <td>{{ $student->name }}</td>
                         <td>{{ $student->email }}</td>
+                        <td>{{ $student->score }}</td>
+                        <td>{{ $student->progres }}</td>
                         <td><a href="/delete/{{ $student->id }}"><button class="btn btn-error">Delete</button></a></td>
                     </tr>
                     @endforeach
@@ -36,5 +40,6 @@
                 </table>
             </div>
         </div>
+        
     </div>
 </x-app-layout>

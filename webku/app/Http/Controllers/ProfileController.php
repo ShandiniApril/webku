@@ -16,7 +16,7 @@ class ProfileController extends Controller
     public function student()
     {
         return view('teacher.student', [
-            "students" => User::where('level', 'siswa')->get()
+            "students" => User::where('level', 'siswa')->orderBy('score', 'desc')->get()
         ]);
     }
 
@@ -59,6 +59,16 @@ class ProfileController extends Controller
 
         return back()->with('success', 'Data User Berhasil Update!');
     }
+
+    // public function updateScore(Request $request, $id)
+    // {
+    //     $user = User::find($id);
+    //     $user->score = $user->score + $request;
+
+    //     $user->update();
+
+    //     return back()->with('success', 'Data User Berhasil Update!');
+    // }
 
     public function remove($id)
     {

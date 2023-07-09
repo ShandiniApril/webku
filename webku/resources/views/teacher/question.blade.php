@@ -31,12 +31,6 @@
                         </div>
                     </div>
                     <div>
-                        <label for="code" class="block text-sm font-medium leading-6 text-gray-900">code (kode soal, tanpa spasi)</label>
-                        <div>
-                        <input id="code" name="code" type="string" autocomplete="code" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
-                        </div>
-                    </div>
-                    <div>
                         <label for="no" class="block text-sm font-medium leading-6 text-gray-900">Nomor Soal</label>
                         <div class="mt-2">
                         <input id="no" name="no" type="int" autocomplete="no" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
@@ -145,12 +139,6 @@
                         <label for="slug" class="block text-sm font-medium leading-6 text-gray-900">Slug (kode materi, tanpa spasi)</label>
                         <div>
                         <input id="slug" name="slug" type="string" autocomplete="slug" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="code" class="block text-sm font-medium leading-6 text-gray-900">code (kode soal, tanpa spasi)</label>
-                        <div>
-                        <input id="code" name="code" type="string" autocomplete="code" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
                         </div>
                     </div>
                     <div>
@@ -270,7 +258,6 @@
                     <tr>
                         <th>No</th>
                         <th>Slug</th>
-                        <th>Code</th>
                         <th>No Soal</th>
                         <th>Gambar</th>
                         <th>Pertanyaan</th>
@@ -288,7 +275,6 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $quiz->slug }}</td>
-                        <td>{{ $quiz->code }}</td>
                         <td>{{ $quiz->no }}</td>
                         <td>{{ $quiz->image }}</td>
                         <td>{{ $quiz->question }}</td>
@@ -315,7 +301,6 @@
                     <tr>
                         <th>No</th>
                         <th>Slug</th>
-                        <th>Code</th>
                         <th>No Soal</th>
                         <th>Gambar</th>
                         <th>Pertanyaan</th>
@@ -333,7 +318,6 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->slug }}</td>
-                        <td>{{ $item->code }}</td>
                         <td>{{ $item->no }}</td>
                         <td>{{ $item->image }}</td>
                         <td>{{ $item->question }}</td>
@@ -360,7 +344,6 @@
                     <tr>
                         <th>No</th>
                         <th>Slug</th>
-                        <th>Code</th>
                         <th>No Soal</th>
                         <th>Gambar</th>
                         <th>Pertanyaan</th>
@@ -378,7 +361,6 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->slug }}</td>
-                        <td>{{ $item->code }}</td>
                         <td>{{ $item->no }}</td>
                         <td>{{ $item->image }}</td>
                         <td>{{ $item->question }}</td>

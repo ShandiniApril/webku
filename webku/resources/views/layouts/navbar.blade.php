@@ -7,12 +7,12 @@
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       @if (auth()->user()->level=="guru")
-        <li><a href="/student">Siswa</a></li>
-        <li><a href="/addSubject">Materi</a></li>
-        <li><a href="/question">Soal</a></li>
-        <li><a href="/report">Rapot Siswa</a></li>
-        <li><a href="/reaction">Reaksi & Komentar</a></li>
-        <li><a href="/reportProyek">Laporan Proyek</a></li>
+      <li><a href="/student">Siswa</a></li>
+      <li><a href="/addSubject">Materi</a></li>
+      <li><a href="/showReaction">Reaksi & Komentar</a></li>
+      <li><a href="/question">Soal</a></li>
+      <li><a href="/report">Hasil Test</a></li>
+      <li><a href="/reportProyek">Laporan Proyek</a></li>
       @endif
       @if (auth()->user()->level=="siswa")
       <li><a href="/subject">Belajar</a></li>
@@ -32,9 +32,9 @@
       @if (auth()->user()->level=="guru")
         <li><a href="/student">Siswa</a></li>
         <li><a href="/addSubject">Materi</a></li>
+        <li><a href="/showReaction">Reaksi & Komentar</a></li>
         <li><a href="/question">Soal</a></li>
-        <li><a href="/report">Rapot Siswa</a></li>
-        <li><a href="/reaction">Reaksi & Komentar</a></li>
+        <li><a href="/report">Hasil Test</a></li>
         <li><a href="/reportProyek">Laporan Proyek</a></li>
       @endif
       @if (auth()->user()->level=="siswa")

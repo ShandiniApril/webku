@@ -25,7 +25,7 @@ class LoginController extends Controller
             return redirect()->intended('/home');
         }
 
-        return back()->with('loginError', 'Login failed!');
+        return back()->with('loginError', 'Anda gagal masuk! Coba kembali dengan memasukkan email dan password yang benar!');
     }
 
     public function logout()

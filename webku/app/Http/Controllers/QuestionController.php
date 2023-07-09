@@ -11,6 +11,7 @@ class QuestionController extends Controller
     {
         return view('teacher.question', [
             "quizes" => Question::where('slug', 'quiz1')->get(),
+            // "quizes" => Question::where('slug', 'quiz1')->get(),
             "pretest" => Question::where('slug', 'pretest')->get(),
             "postest" => Question::where('slug', 'postest')->get()
         ]);
@@ -20,6 +21,13 @@ class QuestionController extends Controller
     {
         return view('student.quiz', [
             "quiz" => Question::where('slug', $quiz)->get()
+        ]);
+    }
+
+    public function test(string $test)
+    {
+        return view('student.test', [
+            "test" => Question::where('slug', $test)->get()
         ]);
     }
 

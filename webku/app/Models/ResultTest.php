@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Test extends Model
+class ResultTest extends Model
 {
     use HasFactory;
     protected $fillable = [
@@ -43,4 +43,9 @@ class Test extends Model
         'no30',
         'score',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

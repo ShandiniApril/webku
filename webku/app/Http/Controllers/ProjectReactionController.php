@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\GroupProject;
 use App\Models\ProjectReaction;
 use App\Models\SubmitProject;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -42,9 +43,12 @@ class ProjectReactionController extends Controller
         ]);
 
         $data['user_id'] = Auth::id();
-        // $data['subject_id'] = Subject::id();
-        // dd($data);
         ProjectReaction::insert($data);
+
+        // update nilai ke tabel user
+        $user = User::find(Auth::id());
+        $user->progres = $user->progres + 20;
+        $user->update();
 
         return back()->with('success', 'Terima kasih telah mengisi, kamu keren telah berhasil mengerjakan Proyek!');
     }

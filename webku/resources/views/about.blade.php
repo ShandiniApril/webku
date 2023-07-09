@@ -3,7 +3,7 @@
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center py-4">
             <div class="avatar">
                 <div class="w-24 rounded-full">
-                  <img src="/image/maudy.jpg" />
+                  <img src="/image/aprill.jpg" />
                 </div>
             </div>
             
@@ -15,7 +15,7 @@
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center py-4">
             
             <p class="font-bold py-4">About | Developer</p> 
-            <p class="text-center">I am a student at Universitas Pendidikan Indonesia majoring Computer Science Education.</p>
+            <p class="text-center">I am a student of computer science education at the Indonesian University of Education.</p>
             <p class="font-semibold py-4">You can contact me at:</p>  
             
             <div class="grid grid-flow-col gap-4 pb-4">

@@ -3,40 +3,51 @@
         <div>
             <p class="font-bold text-center text-2xl pb-8">Hasil Belajar Siswa WebKu</p>
         </div>
-        <div class="grid flex-grow card bg-base-300 rounded-box place-items-center sm:py-6 lg:py-6">
-            <p class="font-bold pb-2">Tabel Score Quizes</p>
-            <div class="overflow-x-auto lg:max-w-screen-lg py-2">
-                <table class="table">
-                  <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Quiz</th>
-                        <th>No1</th>
-                        <th>No2</th>
-                        <th>No3</th>
-                        <th>No4</th>
-                        <th>No5</th>
-                        <th>Score</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @foreach ($resultQuizes as $quiz)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $quiz->user_id }}</td>
-                        <td>{{ $quiz->slug }}</td>
-                        <td>{{ $quiz->no1 }}</td>
-                        <td>{{ $quiz->no2 }}</td>
-                        <td>{{ $quiz->no3 }}</td>
-                        <td>{{ $quiz->no4 }}</td>
-                        <td>{{ $quiz->no5 }}</td>
-                        <td>{{ $quiz->score }}</td>
-                    </tr>
-                    @endforeach
-                  </tbody>
+
+        @foreach ($tests as $test)
+        <div class="collapse collapse-arrow bg-primary">
+            <input type="checkbox" /> 
+            
+            <div class="collapse-title font-medium">
+                Hasil test {{ $test->slug }} siswa WebKu
+            </div>
+            <div class="collapse-content">
+            <div>
+                <table class="table mx-auto">
+                    <thead>
+                      <tr>
+                          <th>No</th>
+                          <th>Nama</th>
+                          <th>No1</th>
+                          <th>No2</th>
+                          <th>No3</th>
+                          <th>No4</th>
+                          <th>No5</th>
+                          <th>Score</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <?php $test == $test->slug?>
+                        <dd>{{ $test }}</dd>
+                      @foreach (<?php $test ?> as $result)
+                      <tr>
+                          <td>{{ $loop->iteration }}</td>
+                          <td>{{ $result->user->name }}</td>
+                          <td>{{ $result->no1 }}</td>
+                          <td>{{ $result->no2 }}</td>
+                          <td>{{ $result->no3 }}</td>
+                          <td>{{ $result->no4 }}</td>
+                          <td>{{ $result->no5 }}</td>
+                          <td>{{ $result->score }}</td>
+                      </tr>
+                      @endforeach
+                    </tbody>
                 </table>
             </div>
+            </div>
         </div>
+        <br>
+        @endforeach
+
     </div>
 </x-app-layout>
