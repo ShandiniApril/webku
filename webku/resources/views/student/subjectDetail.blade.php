@@ -25,12 +25,12 @@
         <iframe width="100%" height="350" src="{{ $subject->pdf }}" allow="autoplay"></iframe>
       </div>
       
-      <p class="mt-8 text-sm font-bold" >Temukan kode dalam materi dan kamu akan mendapatkan 5 poin progres WebKu</p><br>
+      <p class="mt-8 px-4 text-sm font-bold" >Temukan kode dalam materi dan kamu akan mendapatkan 5 poin progres WebKu</p><br>
 
       <div class="alert w-full md:max-w-3xl mb-4">
         <form action="" method="POST">
         @csrf
-          <label for="code" class="text-sm font-bold leading-6 text-gray-900">Masukkan kode yang berhasil kamu temukan</label>
+          <label for="code" class="text-sm font-bold leading-6 text-gray-900">Masukkan kode yang berhasil kamu temukan disini</label>
           <input type="string" name="code" placeholder="Kode" class="input input-bordered w-full max-w-xs" /> <br>
           <div>
             <button type="submit" class="btn btn-sm btn-primary">Enter</button>

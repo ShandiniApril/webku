@@ -27,22 +27,22 @@ class ReactionController extends Controller
         $code = Subject::select('code')->where('id', $id)->get();
 
         if ($request['code'] == $code[0]->code) {
-            return redirect('/reaction');
+            return redirect('/reaction' . '/' . $id);
         } else {
             return back()->with('failed', 'Maaf kode yang kamu masukkan salah! Silakan coba lagi!');
         }
     }
 
-    public function addReaction(Request $request)
+    public function addReaction(Request $request, $id)
     {
         $data = $request->validate([
-            'subject' => 'required|string',
             'rating' => 'required',
             'expression' => 'required|string',
             'comment' => 'required|string',
         ]);
 
         $data['user_id'] = Auth::id();
+        $data['subject_id'] = $id;
         Reaction::insert($data);
 
         // update nilai ke tabel user

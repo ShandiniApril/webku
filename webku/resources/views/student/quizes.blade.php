@@ -24,7 +24,12 @@
               <br>
               <p>Quiz hanya bisa dilakukan 1x. Apakah kamu yakin akan mengerjakan kuis?</p>
             <br>
-            <a href="/test/quiz{{ $subject->id }}"><button class="btn btn-primary">Kerjakan</button></a>
+            {{-- <a href="{{ $result == null ? '/test/quiz' . '/' . $subject->id : ''}}">
+              <button class="btn btn-primary" {{ $result == null ? '' : 'disabled' }}>Kerjakan</button>
+            </a> --}}
+            <a href="/test/quiz{{ $subject->id }}">
+              <button class="btn btn-primary">Kerjakan</button>
+            </a>
           </div>
           </div>
       </div>

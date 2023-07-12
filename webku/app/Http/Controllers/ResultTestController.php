@@ -13,16 +13,14 @@ class ResultTestController extends Controller
     public function report()
     {
         return view('teacher.report', [
-            "tests" => ResultTest::select('slug')->distinct()->get(),
-            "results" => ResultTest::all(),
-            "pretest" => ResultTest::with('user')->where('slug', 'pretest')->get(),
-            "quiz1" => ResultTest::with('user')->where('slug', 'quiz1')->get(),
-            "quiz2" => ResultTest::with('user')->where('slug', 'quiz2')->get(),
-            "quiz3" => ResultTest::with('user')->where('slug', 'quiz3')->get(),
-            "quiz4" => ResultTest::with('user')->where('slug', 'quiz4')->get(),
-            "quiz5" => ResultTest::with('user')->where('slug', 'quiz5')->get(),
-            "quiz6" => ResultTest::with('user')->where('slug', 'quiz6')->get(),
-            "postest" => ResultTest::with('user')->where('slug', 'postest')->get(),
+            "pretest" => ResultTest::where('slug', 'pretest')->with('user')->get(),
+            "quiz1" => ResultTest::where('slug', 'quiz1')->with('user')->get(),
+            "quiz2" => ResultTest::where('slug', 'quiz2')->with('user')->get(),
+            "quiz3" => ResultTest::where('slug', 'quiz3')->with('user')->get(),
+            "quiz4" => ResultTest::where('slug', 'quiz4')->with('user')->get(),
+            "quiz5" => ResultTest::where('slug', 'quiz5')->with('user')->get(),
+            "quiz6" => ResultTest::where('slug', 'quiz6')->with('user')->get(),
+            "postest" => ResultTest::where('slug', 'postest')->with('user')->get(),
         ]);
     }
 
@@ -54,7 +52,7 @@ class ResultTestController extends Controller
         // update nilai ke tabel user
         $user = User::find(Auth::id());
         $user->score = $user->score + $total;
-        $user->update();
+        // $user->update();
 
         // update progres ke tabel user
         if ($slug == "pretest" || $slug == "postest") {

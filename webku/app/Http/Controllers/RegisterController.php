@@ -22,12 +22,12 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => ['required', 'email', 'max:255'],
             'password' => 'required|min:3|max:255',
-            'image' => 'image|file|max:1024'
+            // 'image' => 'image|file|max:1024'
         ]);
 
-        if ($request->file('image')) {
-            $validatedData['image'] = $request->file('image')->store('user-images');
-        }
+        // if ($request->file('image')) {
+        //     $validatedData['image'] = $request->file('image')->store('user-images');
+        // }
 
         $validatedData['password'] = Hash::make($validatedData['password']);
 

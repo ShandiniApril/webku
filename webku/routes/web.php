@@ -74,7 +74,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {
     Route::get('/subject', [SubjectController::class, 'subject']);
     Route::get('/subjectDetail/{subject:id}', [SubjectController::class, 'subjectDetail']);
     Route::post('/subjectDetail/{subject:id}', [ReactionController::class, 'checkCode']);
-    Route::get('/reaction', [ReactionController::class, 'reaction']);
+    Route::get('/reaction/{subject:id}', [ReactionController::class, 'reaction']);
     Route::post('/reaction', [ReactionController::class, 'addReaction']);
     Route::get('/quizes', [SubjectController::class, 'quizes']);
     Route::get('/test/{test:slug}', [QuestionController::class, 'test']);

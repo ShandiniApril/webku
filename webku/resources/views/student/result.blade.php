@@ -32,7 +32,7 @@
     </div>
     <div class="divider"></div>
     
-    <div class="grid flex-grow card rounded-box place-items-center">
+    <div class="grid flex-grow place-items-center">
       <p class="font-bold text-primary text-lg my-4">My Result</p>
 
       <div class="stats stats-vertical lg:stats-horizontal shadow">
@@ -73,6 +73,25 @@
       </div>
       <br>
 
+      {{-- @if (w-sm)
+      <div class="overflow-x-auto h-96">
+        <table class="table table-pin-rows">
+          @foreach ($results as $result)
+          <thead>
+            <tr>
+              <th>{{ $loop->iteration }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Test: {{ $result->slug }}</td></tr>
+            <tr><td>Score: {{ $result->score }}</td></tr>
+            <tr><td>Waktu Pengerjaan</td></tr>
+            <tr><td>{{ $result->created_at }}</td></tr>
+          </tbody>
+          @endforeach
+        </table>
+      </div>
+      @else
       <div class="place-items-center my-6">
         <table class="table">
           <thead>
@@ -95,6 +114,50 @@
           </tbody>
         </table>
       </div>
+      @endif --}}
+      {{-- <div class="container mx-auto"> --}}
+        <div class="place-items-center my-6">
+        <table class="table">
+          <thead>
+            <tr >
+                <th>No</th>
+                <th>Test</th>
+                <th>Score</th>
+                <th>Waktu Pengerjaan</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach ($results as $result)
+            <tr>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $result->slug }}</td>
+                <td>{{ $result->score }}</td>
+                <td>{{ $result->created_at }}</td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+      </div>
+      {{-- </div> --}}
+      
+
+      {{-- <div class="overflow-x-auto h-96">
+        <table class="table table-pin-rows">
+          @foreach ($results as $result)
+          <thead>
+            <tr>
+              <th>{{ $loop->iteration }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Test: {{ $result->slug }}</td></tr>
+            <tr><td>Score: {{ $result->score }}</td></tr>
+            <tr><td>Waktu Pengerjaan</td></tr>
+            <tr><td>{{ $result->created_at }}</td></tr>
+          </tbody>
+          @endforeach
+        </table>
+      </div> --}}
       
   </div>
 </div>

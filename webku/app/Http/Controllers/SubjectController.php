@@ -16,6 +16,7 @@ class SubjectController extends Controller
 
     public function quizes()
     {
+        // $matchThese = ['slug' => ]
         return view('student.quizes', [
             "subjects" => Subject::all()
         ]);

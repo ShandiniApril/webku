@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('subject');
+            $table->unsignedBigInteger('subject_id')->nullable();
+            $table->foreign('subject_id')->references('id')->on('subjects');
             $table->integer('rating');
             $table->string('expression');
             $table->text('comment');

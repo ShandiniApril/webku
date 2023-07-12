@@ -67,7 +67,7 @@
                       </div>
                     </div>
             
-                    <div class="form-control">
+                    {{-- <div class="form-control">
                       <label for="image" class="label">
                         <span class="label-text">Foto Profil</span>
                       </label>
@@ -77,7 +77,7 @@
                             {{ $message }}
                           </div>
                       @enderror
-                    </div>
+                    </div> --}}
               
                     <div>
                       <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mt-12 text-sm font-semibold leading-6">Daftar</button>

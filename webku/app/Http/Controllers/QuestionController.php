@@ -9,8 +9,11 @@ class QuestionController extends Controller
 {
     public function question()
     {
+        // $code = Question::select('slug')->get();
+        // dd($code[0]->slug);
+        // $slug = substr($code[0], 0, -4);
         return view('teacher.question', [
-            "quizes" => Question::where('slug', 'quiz1')->get(),
+            "quizes" => Question::where('slug', 'LIKE', 'quiz%')->get(),
             // "quizes" => Question::where('slug', 'quiz1')->get(),
             "pretest" => Question::where('slug', 'pretest')->get(),
             "postest" => Question::where('slug', 'postest')->get()

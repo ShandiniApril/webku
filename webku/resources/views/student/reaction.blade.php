@@ -41,6 +41,7 @@
                     <textarea id="comment" name="comment" type="text" autocomplete="comment" required class="textarea w-full rounded-md border-0 pt-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
                     </div>
                 </div>
+                
                 <div>
                     <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md mb-8 text-sm font-semibold leading-6 text-white">Submit</button>
                 </div>

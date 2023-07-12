@@ -18,8 +18,8 @@
       <li><a href="/subject">Belajar</a></li>
       <li><a href="/quizes">Kuis</a></li>
       <li><a href="/project">Proyek</a></li>
-      <li><a href="/result">Hasil Belajar</a></li>
       <li><a href="/exam">Ujian</a></li>
+      <li><a href="/result">Hasil Belajar</a></li>
       @endif
       <li><a href="/about">Tentang</a></li>
       </ul>
@@ -41,8 +41,8 @@
       <li><a href="/subject">Belajar</a></li>
       <li><a href="/quizes">Kuis</a></li>
       <li><a href="/project">Proyek</a></li>
-      <li><a href="/result">Hasil Belajar</a></li>
       <li><a href="/exam">Ujian</a></li>
+      <li><a href="/result">Hasil Belajar</a></li>
       @endif
       <li><a href="/about">Tentang</a></li>
     </ul>
