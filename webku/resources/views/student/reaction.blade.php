@@ -7,12 +7,6 @@
             <form class="space-y-6" action="#" method="POST">
                 @csrf
                 <div>
-                    <label for="subject" class="block text-sm font-bold leading-6 text-gray-900">Judul Materi</label>
-                    <div>
-                    <input id="subject" name="subject" type="string" autocomplete="subject" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
-                    </div>
-                </div>
-                <div>
                     <label for="rating" class="text-sm font-bold leading-6 text-gray-900">Rating kamu untuk materi ini (1-5 bintang)</label>
                     <div class="rating rating-lg gap-6">
                     <input type="radio" name="rating" class="mask mask-star-2 bg-red-400" value="1" required checked/>

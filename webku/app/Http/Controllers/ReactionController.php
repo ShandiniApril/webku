@@ -50,6 +50,6 @@ class ReactionController extends Controller
         $user->progres = $user->progres + 5;
         $user->update();
 
-        return redirect('/subject')->with('success', 'Selamat kamu telah mendapatkan 5 poin progres WebKu! silahkan lanjutkan ke materi berikutnya!');
+        return back()->with('success', 'Selamat kamu telah mendapatkan 5 poin progres WebKu! silahkan kerjakan kuis!');
     }
 }

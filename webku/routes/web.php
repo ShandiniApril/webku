@@ -57,6 +57,9 @@ Route::group(['middleware' => ['auth', 'ceklevel:guru']], function () {
     Route::get('/delete/{id}', [ProfileController::class, 'remove']);
     Route::get('/addSubject', [SubjectController::class, 'addSubject']);
     Route::post('/addSubject', [SubjectController::class, 'store']);
+    Route::get('/editSubject/{id}', [SubjectController::class, 'edit']);
+    Route::put('/updateSubject/{id}', [SubjectController::class, 'update']);
+    Route::get('/deleteSubject/{id}', [SubjectController::class, 'remove']);
     Route::get('/question', [QuestionController::class, 'question']);
     Route::post('/question/noImage', [QuestionController::class, 'addTestNoImage']);
     Route::post('/question/withImage', [QuestionController::class, 'addTestWithImage']);
@@ -75,7 +78,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {
     Route::get('/subjectDetail/{subject:id}', [SubjectController::class, 'subjectDetail']);
     Route::post('/subjectDetail/{subject:id}', [ReactionController::class, 'checkCode']);
     Route::get('/reaction/{subject:id}', [ReactionController::class, 'reaction']);
-    Route::post('/reaction', [ReactionController::class, 'addReaction']);
+    Route::post('/reaction/{subject:id}', [ReactionController::class, 'addReaction']);
     Route::get('/quizes', [SubjectController::class, 'quizes']);
     Route::get('/test/{test:slug}', [QuestionController::class, 'test']);
     Route::post('/test/{test:slug}', [ResultTestController::class, 'submitTest']);
@@ -86,10 +89,10 @@ Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {
     Route::get('/submitProject', [SubmitProjectController::class, 'index']);
     Route::post('/submitProject', [SubmitProjectController::class, 'store']);
     Route::get('/result', [ResultTestController::class, 'result']);
-    // Route::get('/exam', [HomeController::class, 'exam']);
-    Route::get('/exam', function () {
-        return view('student.exam');
-    });
+    Route::get('/exam', [ResultTestController::class, 'exam']);
+    // Route::get('/exam', function () {
+    //     return view('student.exam');
+    // });
 });
 
 Route::get('/materis', function () {

@@ -16,7 +16,7 @@
           <input type="checkbox" /> 
           
           <div class="collapse-title font-medium">
-            {{ $subject->id }}. {{ $subject->title }}
+            {{ $loop->iteration }}. {{ $subject->title }}
           </div>
           <div class="collapse-content">
           <div class="mx-6">

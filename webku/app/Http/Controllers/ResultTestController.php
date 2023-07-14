@@ -32,6 +32,20 @@ class ResultTestController extends Controller
         ]);
     }
 
+    public function exam()
+    {
+        $matchPre = ['slug' => 'pretest', 'user_id' => auth()->user()->id];
+        $matchPos = ['slug' => 'postest', 'user_id' => auth()->user()->id];
+
+        $pretest = ResultTest::where($matchPre)->first();
+        $postest = ResultTest::where($matchPos)->first();
+
+        return view('student.exam', [
+            'pretest' => $pretest,
+            'postest' => $postest,
+        ]);
+    }
+
     public function submitTest(Request $request, string $slug)
     {
         $questions = Question::select('answer', 'point')->where('slug', $slug)->get();
