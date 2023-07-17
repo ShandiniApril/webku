@@ -18,8 +18,8 @@ class Subject extends Model
         'pdf',
     ];
 
-    public function reactions()
+    public function reaction()
     {
-        return $this->hasMany(Reaction::class, 'subject_id', 'id');
+        return $this->hasMany(Reaction::class);
     }
 }

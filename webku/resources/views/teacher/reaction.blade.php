@@ -20,7 +20,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $reaction->user->name }}</td>
-                        <td>{{ $reaction->subject }}</td>
+                        <td>{{ $reaction->subject->title }}</td>
                         <td>{{ $reaction->expression }}</td>
                         <td>{{ $reaction->comment }}</td>
                     </tr>

@@ -20,11 +20,11 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('question');
             $table->string('optionImage')->nullable();
-            $table->string('a');
-            $table->string('b');
-            $table->string('c');
-            $table->string('d');
-            $table->string('e');
+            $table->string('a')->nullable();
+            $table->string('b')->nullable();
+            $table->string('c')->nullable();
+            $table->string('d')->nullable();
+            $table->string('e')->nullable();
             $table->string('answer');
             $table->integer('point');
             $table->timestamps();

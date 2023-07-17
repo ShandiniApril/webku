@@ -63,14 +63,18 @@ Route::group(['middleware' => ['auth', 'ceklevel:guru']], function () {
     Route::get('/question', [QuestionController::class, 'question']);
     Route::post('/question/noImage', [QuestionController::class, 'addTestNoImage']);
     Route::post('/question/withImage', [QuestionController::class, 'addTestWithImage']);
+    Route::get('/editQuestion/{id}', [QuestionController::class, 'edit']);
+    Route::put('/updateQuestion/{id}', [QuestionController::class, 'update']);
+    Route::get('/deleteQuestion/{id}', [QuestionController::class, 'remove']);
     Route::get('/questionOld', [QuizesController::class, 'question']);
     Route::post('/question/addQuizes', [QuizesController::class, 'addQuiz']);
-    Route::post('/question/examNoImage', [ExamController::class, 'addTestNoImage']);
-    Route::post('/question/examImage', [ExamController::class, 'addTestWithImage']);
     Route::get('/report', [ResultTestController::class, 'report']);
     Route::get('/showReaction', [ReactionController::class, 'showReaction']);
     Route::get('/reportProyek', [ProjectReactionController::class, 'reportProject']);
     Route::post('/reportProyek', [GroupProjectController::class, 'store']);
+    Route::get('/editProject/{id}', [GroupProjectController::class, 'edit']);
+    Route::put('/updateProject/{id}', [GroupProjectController::class, 'update']);
+    Route::get('/deleteProject/{id}', [GroupProjectController::class, 'remove']);
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:siswa']], function () {

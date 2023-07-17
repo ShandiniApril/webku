@@ -13,7 +13,7 @@ class ReactionController extends Controller
     public function showReaction()
     {
         return view('teacher.reaction', [
-            "reactions" => Reaction::with('user')->get()
+            "reactions" => Reaction::with('user', 'subject')->get()
         ]);
     }
 

@@ -15,7 +15,7 @@
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center py-4">
             
             <p class="font-bold py-4">About | Developer</p> 
-            <p class="text-center">I am a student of computer science education at the Indonesian University of Education.</p>
+            <p class="text-center">I am a student of computer science education at Universitas Pendidikan Indonesia.</p>
             <p class="font-semibold py-4">You can contact me at:</p>  
             
             <div class="grid grid-flow-col gap-4 pb-4">
@@ -51,39 +51,43 @@
     <div class="flex flex-col mx-auto mb-10 border-opacity-50 max-w-screen-lg p-4 sm:px-6 lg:px-4">
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-4">
            <p class="font-bold py-4">About | WebKu</p> 
-           <p class="text-justify p-4">WebKu merupakan website yang dibuat oleh pengembang untuk membantu siswa/siswi kelas 11 tingkat SMK/MA pada mata pelajaran pemrograman web. Website ini berisi banyak fitur dari mulai materi, latihan soal, hingga panduan pengerjaan project.<br> <br> Hal ini akan memudahkan siswa belajar website secara mandiri dengan materi yang bisa dibuka kembali dan bisa belajar kapan dan dimana saja asalkan terdapat koneksi internet.</p>
+           <p class="text-justify p-4">WebKu merupakan website yang dibuat oleh pengembang untuk membantu siswa/siswi kelas 11 tingkat SMK/MA pada mata pelajaran pemrograman web, terutama materi CSS.<br> <br> Pada website ini kalian dapat belajar CSS dari mulai video live coding, rangkuman materi pada sebuah PDF, serta bimbingan langsung membuat mini proyek,. Kalian juga dapat melihat progres hasil belajar serta ranking 3 besar siswa WebKu.</p>
         </div>
         <div class="divider"></div>
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-4">
             <p class="font-bold py-4">Petunjuk Penggunaan | WebKu</p> 
             <table class="m-4 p-2 lg-p-1">
                 <tr>
-                    <td class="align-text-top">1.</td>
-                    <td>Silahkan anda login dan registrasi terlebih dahulu menggunakan email dan password.</td>
+                    <td class="align-text-top pr-2">1.</td>
+                    <td>Setelah berhasil masuk dengan email dan password yang diberikan, silakan menambahkan foto profil dan perbarui nama serta email jika terdapat kesalahan.</td>
                 </tr>
                 <tr class="text-start">
                     <td class="align-text-top">2.</td>
-                    <td>Silahkan klik Materi pada bagian atas web untuk mengakses materi. Anda bisa melihat video pembelajaran dan file PDF yang telah disediakan.</td>
+                    <td>Terdapat fitur belajar yang berisi video live coding dan rangkuman materi dalam bentuk PDF. Fitur ini bisa kalian akses kapan saja dan dapat dilihat berulang kali.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">3.</td>
-                    <td>Jika sudah belajar pada halaman materi, silahkan klik halaman quiz dan selamat mengerjakan soal yang terdapat disana.</td>
+                    <td>Temukan kode rahasia ketika belajar! Kalian dapat menggunakan kode tersebut untuk memberikan reaksi dan mendapatkan poin.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">4.</td>
-                    <td>Setelah mengerjakan soal, anda bisa melihat hasilnya beserta peringkat 3 besar yang terdapat pada halaman result.</td>
+                    <td>Jika sudah selesai belajar, silakan kerjakan kuis untuk melihat sejauh apa pemahaman kamu tentang materi tersebut.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">5.</td>
-                    <td>Untuk pengerjaan project, anda kerjakan secara berkelompok di halaman project. Pada halaman ini terdapat panduan pengerjaan, forum diskusi dan laporan tugas.</td>
+                    <td>Fitur proyek digunakan untuk pengerjaan mini proyek secara terbimbing. Pada halaman ini terdapat panduan pengerjaan, penjelasan singkat tahapan pengerjaan proyek, forum diskusi kelompok dan laporan tugas.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">6.</td>
-                    <td>Halaman exam digunakan untuk ujian akhir pembelajaran. Jangan dikerjakan sebelum diperintahkan! karena hanya bisa diisi satu kali.</td>
+                    <td>Halaman ujian digunakan untuk ujian awal dan akhir pembelajaran. Jangan dikerjakan sebelum diperintahkan! karena hanya bisa diisi satu kali.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">7.</td>
-                    <td>Halaman about berisi profil pengembang dan petunjuk penggunaan WebKu.</td>
+                    <td>Hasil belajar memuat laporan individu seperti progres belajar, total skor, rincian nilai yang didapat selama ujian maupun kuis. Serta kalian dapat melihat ranking 3 besar siswa WebKu.</td>
+                </tr>
+                <tr>
+                    <td class="align-text-top">8.</td>
+                    <td>Halaman tentang berisi profil pengembang dan petunjuk penggunaan WebKu.</td>
                 </tr>
             </table>
         </div>
