@@ -30,6 +30,6 @@ class SubmitProjectController extends Controller
         // dd($data);
         SubmitProject::insert($data);
 
-        return back()->with('success', 'Project berhasil dikumpulkan!');
+        return redirect('/project')->with('success', 'Project berhasil dikumpulkan!');
     }
 }

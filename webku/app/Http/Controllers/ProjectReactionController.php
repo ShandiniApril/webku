@@ -48,8 +48,9 @@ class ProjectReactionController extends Controller
         // update nilai ke tabel user
         $user = User::find(Auth::id());
         $user->progres = $user->progres + 20;
+        $user->score = $user->score + 20;
         $user->update();
 
-        return back()->with('success', 'Terima kasih telah mengisi, kamu keren telah berhasil mengerjakan Proyek!');
+        return redirect('/project')->with('success', 'Selamat kamu berhasil mengerjakan mini project dan mendapatkan 20 poin Webku!');
     }
 }

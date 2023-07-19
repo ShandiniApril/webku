@@ -10,9 +10,12 @@
 
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Profile User WebKu</h2>
-      {{-- <div class="mt-4 items-center">
-        <img class="h-32" src="{{ asset('storage/user-images/' . $user->image) }}" alt="">
-      </div> --}}
+      @if ($user->image !=null)
+        <div class="mt-8">
+          <img class="h-32 mx-auto" src="{{ asset('storage/' . $user->image) }}" alt="">
+        </div>
+      @endif
+      
       <form class="space-y-6" action="/update/{{ $user->id }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')

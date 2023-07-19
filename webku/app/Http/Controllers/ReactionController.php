@@ -48,8 +48,9 @@ class ReactionController extends Controller
         // update nilai ke tabel user
         $user = User::find(Auth::id());
         $user->progres = $user->progres + 5;
+        $user->score = $user->score + 5;
         $user->update();
 
-        return back()->with('success', 'Selamat kamu telah mendapatkan 5 poin progres WebKu! silahkan kerjakan kuis!');
+        return redirect('/subjectDetail' . '/' . $id)->with('success', 'Selamat kamu berhasil mendapatkan 5 poin progres WebKu! Silakan kerjakan kuisnya!');
     }
 }

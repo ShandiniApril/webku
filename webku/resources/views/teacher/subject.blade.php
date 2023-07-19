@@ -55,7 +55,7 @@
 
         <div class="collapse collapse-plus bg-base-200 my-6">
             <input type="checkbox" /> 
-            <div class="collapse-title font-bold">
+            <div class="collapse-title font-bold bg-primary peer-checked:bg-base-200">
               Tambah Materi
             </div>
             <div class="collapse-content"> 

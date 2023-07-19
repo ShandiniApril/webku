@@ -14,7 +14,7 @@
             <div>
               <p class="font-bold text-primary"> Soal {{ $item->no }} </p>
               <div>
-                <img src="{{ asset('storage/question-images/' . $item->image) }}" alt="">
+                <img class="h-max-30" src="{{ asset('storage/question-images/' . $item->image) }}" alt="">
               </div>
               
               <label for="no{{ $item->no }}" class="block text-lg font-medium leading-6 text-gray-900"> {{ $item->question }} </label>

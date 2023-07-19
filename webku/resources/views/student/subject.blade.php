@@ -1,5 +1,6 @@
 <x-app-layout>
     <div class="flex flex-col border-opacity-50 max-w-screen-xl mx-auto my-6 p-4 sm:px-6 lg:px-4">
+      
       <div>
         <p class="font-bold text-center text-2xl pb-8">Materi CSS WebKu</p>
       </div>
@@ -13,7 +14,7 @@
             </div>
             <div class="collapse-content">
             <div class="mx-6">
-                <p>Highlight: {{ $subject->highlight }}</p>
+                <p>{{ $subject->highlight }}</p>
                 <br>
                 <a href="/subjectDetail/{{ $subject->id }}"><button class="btn btn-primary">Lihat Detail Materi</button></a>
             </div>

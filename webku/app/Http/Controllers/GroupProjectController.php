@@ -3,14 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Models\GroupProject;
+use App\Models\ProjectReaction;
 use Illuminate\Http\Request;
 
 class GroupProjectController extends Controller
 {
     public function project()
     {
+        $matchReact = ['user_id' => auth()->user()->id];
+
+        $react = ProjectReaction::where($matchReact)->first();
+
+        // return view('student.exam', [
+        //     'pretest' => $pretest,
+        //     'postest' => $postest,
+        // ]);
         return view('student.project', [
-            "groups" => GroupProject::all()
+            "groups" => GroupProject::all(),
+            "react" => $react
         ]);
     }
 
