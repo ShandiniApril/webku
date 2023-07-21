@@ -57,64 +57,6 @@
                 <input id="e" name="e" type="string" autocomplete="e" value="{{ $question->e }}" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-primary focus:ring-primary sm:text-sm sm:leading-6 px-2">
                 </div>
             </div>
-
-            {{-- @else
-            <div class="form-control">
-                <label for="a" class="label">
-                <span class="label-text">Pilihan a ({{ $question->a }})</span>
-                </label>
-                <input id="a" name="a" type="file" value="{{ $question->a }}" class="file-input file-input-primary @error('a') is-invalid @enderror"/>
-                @error('a')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="form-control">
-                <label for="b" class="label">
-                <span class="label-text">Pilihan b ({{ $question->b }})</span>
-                </label>
-                <input id="b" name="b" type="file" value="{{ $question->b }}" class="file-input file-input-primary @error('b') is-invalid @enderror"/>
-                @error('b')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="form-control">
-                <label for="c" class="label">
-                <span class="label-text">Pilihan c ({{ $question->c }})</span>
-                </label>
-                <input id="c" name="c" type="file" value="{{ $question->c }}" class="file-input file-input-primary @error('c') is-invalid @enderror"/>
-                @error('c')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="form-control">
-                <label for="d" class="label">
-                <span class="label-text">Pilihan d ({{ $question->d }})</span>
-                </label>
-                <input id="d" name="d" type="file" value="{{ $question->d }}" class="file-input file-input-primary @error('d') is-invalid @enderror"/>
-                @error('d')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="form-control">
-                <label for="e" class="label">
-                <span class="label-text">Pilihan e ({{ $question->e }})</span>
-                </label>
-                <input id="e" name="e" type="file" value="{{ $question->e }}" class="file-input file-input-primary @error('e') is-invalid @enderror"/>
-                @error('e')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
-                @enderror
-            </div> --}}
-                
             @endif
             
             <div>

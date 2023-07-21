@@ -73,92 +73,29 @@
       </div>
       <br>
 
-      {{-- @if (w-sm)
-      <div class="overflow-x-auto h-96">
-        <table class="table table-pin-rows">
-          @foreach ($results as $result)
-          <thead>
+      <div class="my-6 w-full max-w-screen-lg">
+        <table class="mx-auto">
+          <thead class="bg-base-300 border-2">
             <tr>
-              <th>{{ $loop->iteration }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Test: {{ $result->slug }}</td></tr>
-            <tr><td>Score: {{ $result->score }}</td></tr>
-            <tr><td>Waktu Pengerjaan</td></tr>
-            <tr><td>{{ $result->created_at }}</td></tr>
-          </tbody>
-          @endforeach
-        </table>
-      </div>
-      @else
-      <div class="place-items-center my-6">
-        <table class="table">
-          <thead>
-            <tr >
-                <th>No</th>
-                <th>Test</th>
-                <th>Score</th>
-                <th>Waktu Pengerjaan</th>
+                <th class="p-3 tracking-wide">No</th>
+                <th class="p-3 tracking-wide">Test</th>
+                <th class="p-3 tracking-wide">Score</th>
+                <th class="p-3 tracking-wide">Waktu Pengerjaan</th>
             </tr>
           </thead>
           <tbody>
             @foreach ($results as $result)
-            <tr>
-                <td>{{ $loop->iteration }}</td>
-                <td>{{ $result->slug }}</td>
-                <td>{{ $result->score }}</td>
-                <td>{{ $result->created_at }}</td>
+            <tr class="border-2">
+                <td class="p-3 tracking-wide">{{ $loop->iteration }}</td>
+                <td class="p-3 tracking-wide">{{ $result->slug }}</td>
+                <td class="p-3 tracking-wide">{{ $result->score }}</td>
+                <td class="p-3 tracking-wide">{{ $result->created_at }}</td>
             </tr>
             @endforeach
           </tbody>
         </table>
       </div>
-      @endif --}}
-      {{-- <div class="container mx-auto"> --}}
-        <div class="place-items-center my-6">
-        <table class="table">
-          <thead>
-            <tr >
-                <th>No</th>
-                <th>Test</th>
-                <th>Score</th>
-                <th>Waktu Pengerjaan</th>
-            </tr>
-          </thead>
-          <tbody>
-            @foreach ($results as $result)
-            <tr>
-                <td>{{ $loop->iteration }}</td>
-                <td>{{ $result->slug }}</td>
-                <td>{{ $result->score }}</td>
-                <td>{{ $result->created_at }}</td>
-            </tr>
-            @endforeach
-          </tbody>
-        </table>
-      </div>
-      {{-- </div> --}}
-      
 
-      {{-- <div class="overflow-x-auto h-96">
-        <table class="table table-pin-rows">
-          @foreach ($results as $result)
-          <thead>
-            <tr>
-              <th>{{ $loop->iteration }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Test: {{ $result->slug }}</td></tr>
-            <tr><td>Score: {{ $result->score }}</td></tr>
-            <tr><td>Waktu Pengerjaan</td></tr>
-            <tr><td>{{ $result->created_at }}</td></tr>
-          </tbody>
-          @endforeach
-        </table>
-      </div> --}}
-      
   </div>
 </div>
 </x-app-layout>

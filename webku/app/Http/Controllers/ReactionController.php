@@ -13,6 +13,13 @@ class ReactionController extends Controller
     public function showReaction()
     {
         return view('teacher.reaction', [
+            "react" => Reaction::select('subject_id')->distinct()->get(),
+            "react1" => Reaction::where('subject_id', '1')->with('user', 'subject')->get(),
+            "react2" => Reaction::where('subject_id', '2')->with('user', 'subject')->get(),
+            "react3" => Reaction::where('subject_id', '3')->with('user', 'subject')->get(),
+            "react4" => Reaction::where('subject_id', '4')->with('user', 'subject')->get(),
+            "react5" => Reaction::where('subject_id', '5')->with('user', 'subject')->get(),
+            "react6" => Reaction::where('subject_id', '6')->with('user', 'subject')->get(),
             "reactions" => Reaction::with('user', 'subject')->get()
         ]);
     }

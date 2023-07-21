@@ -22,7 +22,7 @@
             <main class="flex-grow">
               <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
                 <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                  <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formulir Registrasi WebKu</h2>
+                  <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Register WebKu</h2>
                 </div>
               
                   <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -66,27 +66,15 @@
                         <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6 px-2">
                       </div>
                     </div>
-            
-                    {{-- <div class="form-control">
-                      <label for="image" class="label">
-                        <span class="label-text">Foto Profil</span>
-                      </label>
-                      <input id="image" name="image" type="file" class="file-input file-input-primary @error('image') is-invalid @enderror"/>
-                      @error('image')
-                          <div class="invalid-feedback">
-                            {{ $message }}
-                          </div>
-                      @enderror
-                    </div> --}}
               
                     <div>
-                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mt-12 text-sm font-semibold leading-6">Daftar</button>
+                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 mt-12 text-sm font-semibold leading-6">Register</button>
                     </div>
                   </form>
               
                   <p class="mt-10 text-center text-sm text-gray-500">
                     Sudah punya akun?
-                    <a href="/login" class="font-semibold leading-6 text-primary">Masuk</a>
+                    <a href="/login" class="font-semibold leading-6 text-primary">Login</a>
                   </p>
                 </div>
               </div>

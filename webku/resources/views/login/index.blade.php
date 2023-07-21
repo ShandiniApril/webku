@@ -38,10 +38,10 @@
                 @endif
             
                 <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                  <h2 class="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900">Masuk Akun WebKu</h2>
+                  <h2 class="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900">Login WebKu</h2>
                 </div>
               
-                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <div class="my-10 sm:mx-auto sm:w-full sm:max-w-sm">
                   <form class="space-y-6" action="/login" method="POST">
                     @csrf
                     <div>
@@ -61,15 +61,15 @@
                     </div>
               
                     <div>
-                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white">Masuk</button>
+                      <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white">Login</button>
                     </div>
             
                   </form>
                   
-                  <p class="mt-10 text-center text-sm text-gray-500">
+                  {{-- <p class="mt-10 text-center text-sm text-gray-500">
                     Belum punya akun?
-                    <a href="/register" class="font-semibold leading-6 text-primary">Daftar</a>
-                  </p>
+                    <a href="/register" class="font-semibold leading-6 text-primary">Register</a>
+                  </p> --}}
             
                 </div>
               </div>

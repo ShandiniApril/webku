@@ -49,13 +49,12 @@ class ResultTestController extends Controller
     public function submitTest(Request $request, string $slug)
     {
         $questions = Question::select('answer', 'point')->where('slug', $slug)->get();
+        // dd($questions);
         $total = 0;
 
-        foreach ($questions as $question) {
-            for ($i = 1; $i <= $question->count(); $i++) {
-                if ($request['no' . $i] == $question->answer) {
-                    $total = $total + $question->point;
-                }
+        for ($i = 0; $i < $questions->count(); $i++) {
+            if ($request['no' . $i + 1] == $questions[$i]->answer) {
+                $total = $total + $questions[$i]->point;
             }
         }
 

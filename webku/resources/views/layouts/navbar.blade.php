@@ -20,7 +20,7 @@
       <li><a href="/exam">Ujian</a></li>
       <li><a href="/result">Hasil Belajar</a></li>
       @endif
-      <li><a href="/about">Tentang</a></li>
+      <li><a href="/about">TentangKu</a></li>
       </ul>
       @endauth
     </div>
@@ -42,7 +42,7 @@
       <li><a href="/exam">Ujian</a></li>
       <li><a href="/result">Hasil Belajar</a></li>
       @endif
-      <li><a href="/about">Tentang</a></li>
+      <li><a href="/about">TentangKu</a></li>
     </ul>
   </div>
   <div class="navbar-end">

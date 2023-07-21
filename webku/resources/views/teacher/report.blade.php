@@ -332,48 +332,5 @@
         </div>
         <br>
 
-        {{-- @foreach ($tests as $test)
-        <div class="collapse collapse-arrow bg-primary">
-            <input type="checkbox" /> 
-            
-            <div class="collapse-title font-medium">
-                Hasil test {{ $test->slug }} siswa WebKu
-            </div>
-            <div class="collapse-content">
-            <div>
-                <table class="table mx-auto">
-                    <thead>
-                      <tr>
-                          <th>No</th>
-                          <th>Nama</th>
-                          <th>No1</th>
-                          <th>No2</th>
-                          <th>No3</th>
-                          <th>No4</th>
-                          <th>No5</th>
-                          <th>Score</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      @foreach ($results as $result)
-                      <tr>
-                          <td>{{ $loop->iteration }}</td>
-                          <td>{{ $result->user->name }}</td>
-                          <td>{{ $result->no1 }}</td>
-                          <td>{{ $result->no2 }}</td>
-                          <td>{{ $result->no3 }}</td>
-                          <td>{{ $result->no4 }}</td>
-                          <td>{{ $result->no5 }}</td>
-                          <td>{{ $result->score }}</td>
-                      </tr>
-                      @endforeach
-                    </tbody>
-                </table>
-            </div>
-            </div>
-        </div>
-        <br>
-        @endforeach --}}
-
     </div>
 </x-app-layout>

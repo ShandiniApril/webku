@@ -10,7 +10,6 @@
                     <h2 class="card-title">Ujian Awal!</h2>
                     <p>Ujian ini hanya bisa dilaksanakan 1x. Apakah kamu siap?</p>
                     <div class="card-actions justify-end">
-                        {{-- <a href="/test/pretest"><button class="btn">Ya</button></a> --}}
                         <a href="{{ $pretest == null ? '/test/pretest' : ''}}">
                             <button class="btn" {{ $pretest == null ? '' : 'disabled' }}>Ya</button>
                         </a>
@@ -24,7 +23,6 @@
                     <h2 class="card-title">Ujian Akhir!</h2>
                     <p>Ujian ini hanya bisa dilaksanakan 1x. Apakah kamu siap?</p>
                     <div class="card-actions justify-end">
-                        {{-- <a href="/test/postest"><button class="btn btn-primary">Ya</button></a> --}}
                         <a href="{{ $postest == null ? '/test/postest' : ''}}">
                             <button class="btn btn-primary" {{ $postest == null ? '' : 'disabled' }}>Ya</button>
                         </a>

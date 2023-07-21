@@ -1,26 +1,4 @@
 <x-app-layout>
-  <!--
-This example requires some changes to your config:
-
-```
-// tailwind.config.js
-module.exports = {
-  // ...
-  plugins: [
-    // ...
-    require('@tailwindcss/forms'),
-  ],
-}
-```
--->
-<!--
-This example requires updating your template:
-
-```
-<html class="h-full bg-white">
-<body class="h-full">
-```
--->
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
 
   @if($errors->any())

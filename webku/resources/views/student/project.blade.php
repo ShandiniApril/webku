@@ -111,18 +111,17 @@
         @foreach ($groups as $group)
         <div class="collapse bg-base-200 mt-4">
             <input type="checkbox" class="peer" /> 
-            <div class="collapse-title bg-primary font-bold text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content">
+            <div class="collapse-title bg-primary font-bold">
               {{ $group->name }}
             </div>
-            <div class="collapse-content bg-primary text-primary-content [input:checked~&]:bg-secondary [input:checked~&]:text-secondary-content"> 
-              <div class="mb-4">
-                <p class="mb-4">Anggota: {{ $group->members }}</p>
-                <a href="{{ $group->assignment }}"><button class="btn btn-neutral">Diskusi</button></a>
+            <div class="collapse-content bg-primary peer-checked:bg-base-300"> 
+              <div class="my-4">
+                <p class="my-4">Anggota: {{ $group->members }}</p>
+                <a href="{{ $group->assignment }}"><button class="btn btn-primary">Diskusi</button></a>
                 <a href="/projectReaction">
-                  <button class="btn btn-outline" {{ $react == null ? '' : 'disabled' }}>Reaksi</button>
+                  <button class="btn btn-outline btn-primary" {{ $react == null ? '' : 'disabled' }}>Reaksi</button>
                 </a>
-                {{-- <a href="/projectReaction"><button class="btn btn-outline">Reaksi</button></a> --}}
-                <a href="/submitProject"><button class="btn btn-neutral">Submit</button></a>
+                <a href="/submitProject"><button class="btn btn-primary">Submit</button></a>
               </div>
             </div>
         </div>

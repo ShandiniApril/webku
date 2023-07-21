@@ -12,7 +12,7 @@
           @csrf
           @foreach ($test as $item)
             <div>
-              <p class="font-bold text-primary"> Soal {{ $item->no }} </p>
+              <p class="font-bold text-xl text-primary"> Soal {{ $item->no }} </p>
               <div>
                 <img class="h-max-30" src="{{ asset('storage/question-images/' . $item->image) }}" alt="">
               </div>
@@ -39,7 +39,7 @@
           @endforeach
           <input style="visibility: hidden" name="slug" value="{{ $test[0]->slug }}">
           <div>
-            <button type="submit" class="btn btn-primary flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white my-8">Submit</button>
+            <button type="submit" class="btn btn-primary flex w-full max-w-sm mx-auto rounded-md mb-6 py-1.5 text-sm font-semibold leading-6 text-white my-8">Submit</button>
           </div>
     
         </form>
