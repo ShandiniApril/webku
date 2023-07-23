@@ -32,7 +32,7 @@
                 <div>
                     <label for="comment" class="text-sm font-bold leading-6 text-gray-900">Tanggapan terhadap materi dan ilmu yang didapat</label>
                     <div class="mt-2">
-                    <textarea id="comment" name="comment" type="text" autocomplete="comment" required class="textarea w-full rounded-md border-0 pt-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
+                    <textarea id="comment" name="comment" type="text" autocomplete="comment" required class="textarea w-full h-32 rounded-md border-0 pt-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 sm:text-sm sm:leading-6 px-2"></textarea>
                     </div>
                 </div>
                 

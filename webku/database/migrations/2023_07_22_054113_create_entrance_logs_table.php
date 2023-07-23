@@ -13,18 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('entrance_logs', function (Blueprint $table) {
             $table->id();
-            $table->string('level');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('image')->nullable();
-            $table->integer('score')->default(0);
-            $table->integer('progres')->default(0);
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('status')->default(0);
+            $table->timestamp("loged_in_at")->nullable();
+            $table->timestamp("loged_out_at")->nullable();
             $table->integer('duration')->default(0);
-            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -36,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('entrance_logs');
     }
 };

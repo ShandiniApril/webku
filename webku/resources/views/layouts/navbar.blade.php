@@ -61,15 +61,21 @@
           <li class="font-bold text-center">{{ auth()->user()->name }}</li> <br>
           <li><a href="/profile/{{ auth()->user()->id }}">Profile</a></li>
           <li>
+            <form action="/stop" method="post">
+              @csrf
+              <button type="submit">Berhenti Belajar</button>
+            </form>
+          </li>
+          <li>
             <form action="/logout" method="post">
               @csrf
-              <button type="submit">Keluar</button>
+              <button type="submit">Logout</button>
             </form>
           </li>
         </ul>
       </div> 
     @else
-      <a href="/login" class="btn">Masuk</a>
+      <a href="/login" class="btn">Login</a>
     @endauth
   </div>
 </div>

@@ -12,26 +12,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react1  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react1  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>
@@ -45,26 +47,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react2  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react2  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>
@@ -78,26 +82,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react3  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react3  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>
@@ -111,26 +117,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react4  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react4  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>
@@ -144,26 +152,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react5  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react5  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>
@@ -177,26 +187,28 @@
             </div>
             <div class="collapse-content">
             <div>
-                <table class="table mx-auto">
-                    <thead>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Materi</th>
-                        <th>Reaksi</th>
-                        <th>Komentar</th>
-                    </thead>
-                    <tbody>
-                        @foreach ($react6  as $reaction)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $reaction->user->name }}</td>
-                            <td>{{ $reaction->subject->title }}</td>
-                            <td>{{ $reaction->expression }}</td>
-                            <td>{{ $reaction->comment }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="m-4">
+                    <table class="w-full rounded-lg">
+                        <thead class="bg-base-300 border-2">
+                            <th class="p-3 tracking-wide">No</th>
+                            <th class="p-3 tracking-wide">Nama</th>
+                            <th class="p-3 tracking-wide">Materi</th>
+                            <th class="p-3 tracking-wide">Reaksi</th>
+                            <th class="p-3 tracking-wide">Komentar</th>
+                        </thead>
+                        <tbody class="bg-base-100 border-2">
+                            @foreach ($react6  as $reaction)
+                            <tr class="border-2">
+                                <td class="p-2">{{ $loop->iteration }}</td>
+                                <td class="p-2">{{ $reaction->user->name }}</td>
+                                <td class="p-2">{{ $reaction->subject->title }}</td>
+                                <td class="p-2">{{ $reaction->expression }}</td>
+                                <td class="p-2">{{ $reaction->comment }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
             </div>
         </div>

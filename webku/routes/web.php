@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EntranceLogsController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\GroupProjectController;
 use App\Http\Controllers\HomeController;
@@ -17,6 +18,7 @@ use App\Http\Controllers\ResultTestController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\SubmitProjectController;
 use App\Http\Controllers\TestController;
+use App\Models\EntranceLogs;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,9 +35,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+// Route::get('/home', function () {
+//     return view('home');
+// });
+
+// Route::get('/home', [EntranceLogsController::class, 'home']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -45,6 +49,9 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::middleware('auth')->group(function () {
+    Route::post('/start', [EntranceLogsController::class, 'start']);
+    Route::post('/stop', [EntranceLogsController::class, 'stop']);
+    Route::get('/home', [EntranceLogsController::class, 'home']);
     Route::get('/profile/{id}', [ProfileController::class, 'edit']);
     Route::put('/update/{id}', [ProfileController::class, 'update']);
     Route::get('/about', function () {

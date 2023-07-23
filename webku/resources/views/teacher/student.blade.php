@@ -21,6 +21,7 @@
                         <th>Email</th>
                         <th>Score</th>
                         <th>Progres</th>
+                        <th>Waktu Belajar</th>
                         <th>Action</th>
                     </tr>
                   </thead>
@@ -32,7 +33,8 @@
                         <td>{{ $student->name }}</td>
                         <td>{{ $student->email }}</td>
                         <td>{{ $student->score }}</td>
-                        <td>{{ $student->progres }}</td>
+                        <td>{{ $student->progres }} %</td>
+                        <td>{{ $student->duration }} menit</td>
                         <td><a href="/delete/{{ $student->id }}"><button class="btn btn-error">Delete</button></a></td>
                     </tr>
                     @endforeach

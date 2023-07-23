@@ -43,11 +43,6 @@ return new class extends Migration
             $table->string('no23')->nullable();
             $table->string('no24')->nullable();
             $table->string('no25')->nullable();
-            $table->string('no26')->nullable();
-            $table->string('no27')->nullable();
-            $table->string('no28')->nullable();
-            $table->string('no29')->nullable();
-            $table->string('no30')->nullable();
             $table->integer('score');
             $table->timestamps();
         });
