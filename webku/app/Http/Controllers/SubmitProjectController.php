@@ -20,10 +20,9 @@ class SubmitProjectController extends Controller
         // dd($request);
         $data = $request->validate([
             'group' => 'required|string|max:255',
-            'title' => 'required|string|max:255',
             'members' => 'required|string',
+            'title' => 'required|string|max:255',
             'description' => 'required|string',
-            'ppt' => 'required|string',
             'project' => 'required|string'
         ]);
 
