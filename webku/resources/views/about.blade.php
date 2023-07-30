@@ -51,7 +51,7 @@
     <div class="flex flex-col mx-auto mb-10 border-opacity-50 max-w-screen-lg p-4 sm:px-6 lg:px-4">
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-4">
            <p class="font-bold py-4">About | WebKu</p> 
-           <p class="text-justify p-4">WebKu merupakan website yang dibuat oleh pengembang untuk membantu siswa/siswi kelas 11 tingkat SMK/MA pada mata pelajaran pemrograman web, terutama materi CSS.<br> <br> Pada website ini kalian dapat belajar CSS dari mulai video live coding, rangkuman materi pada sebuah PDF, serta bimbingan langsung membuat mini proyek,. Kalian juga dapat melihat progres hasil belajar serta ranking 3 besar siswa WebKu.</p>
+           <p class="text-justify p-4">WebKu merupakan website yang dibuat oleh pengembang untuk membantu siswa/siswi kelas 11 tingkat SMK/MA pada mata pelajaran pemrograman web, terutama materi CSS.<br> <br> Pada website ini kalian dapat belajar CSS dari mulai video live coding, rangkuman materi pada sebuah PDF, serta bimbingan langsung membuat mini proyek. Kalian juga dapat melihat progres hasil belajar serta ranking 3 besar siswa WebKu.</p>
         </div>
         <div class="divider"></div>
         <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-4">
@@ -67,26 +67,30 @@
                 </tr>
                 <tr>
                     <td class="align-text-top">3.</td>
-                    <td>Temukan kode rahasia ketika belajar! Kalian dapat menggunakan kode tersebut untuk memberikan reaksi dan mendapatkan poin.</td>
+                    <td>Jangan lupa klik tombol mulai belajar untuk menghitung waktu belajar kamu ketika menggunakan WebKu!</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">4.</td>
-                    <td>Jika sudah selesai belajar, silakan kerjakan kuis untuk melihat sejauh apa pemahaman kamu tentang materi tersebut.</td>
+                    <td>Temukan kode rahasia ketika belajar! Kalian dapat menggunakan kode tersebut untuk memberikan reaksi dan mendapatkan poin.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">5.</td>
-                    <td>Fitur proyek digunakan untuk pengerjaan mini proyek secara terbimbing. Pada halaman ini terdapat panduan pengerjaan, penjelasan singkat tahapan pengerjaan proyek, forum diskusi kelompok dan laporan tugas.</td>
+                    <td>Jika sudah selesai belajar, silakan kerjakan kuis untuk melihat sejauh apa pemahaman kamu tentang materi tersebut.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">6.</td>
-                    <td>Halaman ujian digunakan untuk ujian awal dan akhir pembelajaran. Jangan dikerjakan sebelum diperintahkan! karena hanya bisa diisi satu kali.</td>
+                    <td>Fitur proyek digunakan untuk pengerjaan mini proyek secara terbimbing. Pada halaman ini terdapat panduan pengerjaan, penjelasan singkat tahapan pengerjaan proyek, forum diskusi kelompok dan laporan tugas.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">7.</td>
-                    <td>Hasil belajar memuat laporan individu seperti progres belajar, total skor, rincian nilai yang didapat selama ujian maupun kuis. Serta kalian dapat melihat ranking 3 besar siswa WebKu.</td>
+                    <td>Halaman ujian digunakan untuk ujian awal dan akhir pembelajaran. Jangan dikerjakan sebelum diperintahkan! karena hanya bisa diisi satu kali.</td>
                 </tr>
                 <tr>
                     <td class="align-text-top">8.</td>
+                    <td>Hasil belajar memuat laporan individu seperti progres belajar, total skor, rincian nilai yang didapat selama ujian maupun kuis. Serta kalian dapat melihat ranking 3 besar siswa WebKu.</td>
+                </tr>
+                <tr>
+                    <td class="align-text-top">9.</td>
                     <td>Halaman tentang berisi profil pengembang dan petunjuk penggunaan WebKu.</td>
                 </tr>
             </table>

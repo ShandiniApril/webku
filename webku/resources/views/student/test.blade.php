@@ -20,11 +20,11 @@
               <label for="no{{ $item->no }}" class="block text-lg font-medium leading-6 text-gray-900"> {{ $item->question }} </label>
               @if($item->optionImage == 'yes')
                 <div>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="a"/>a <img class="h-30" src="{{ asset('storage/question-images/' . $item->a) }}" alt=""> <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="b"/>b <img class="h-30" src="{{ asset('storage/question-images/' . $item->b) }}" alt=""> <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="c"/>c <img class="h-30" src="{{ asset('storage/question-images/' . $item->c) }}" alt=""> <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="d"/>d <img class="h-30" src="{{ asset('storage/question-images/' . $item->d) }}" alt=""> <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="e"/>e <img class="h-30" src="{{ asset('storage/question-images/' . $item->e) }}" alt=""> <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="a"/>a <img src="{{ asset('storage/question-images/' . $item->a) }}" alt=""> <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="b"/>b <img src="{{ asset('storage/question-images/' . $item->b) }}" alt=""> <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="c"/>c <img src="{{ asset('storage/question-images/' . $item->c) }}" alt=""> <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="d"/>d <img src="{{ asset('storage/question-images/' . $item->d) }}" alt=""> <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="e"/>e <img src="{{ asset('storage/question-images/' . $item->e) }}" alt=""> <br>
                 </div>
               @else
                 <div>
