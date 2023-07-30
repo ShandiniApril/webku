@@ -12,7 +12,7 @@
           @csrf
           @foreach ($test as $item)
             <div>
-              <p class="font-bold text-xl text-primary"> Soal {{ $item->no }} </p>
+              <p class="font-bold text-xl text-primary"> Soal {{ $loop->iteration }} </p>
               <div>
                 <img class="h-max-30" src="{{ asset('storage/question-images/' . $item->image) }}" alt="">
               </div>
