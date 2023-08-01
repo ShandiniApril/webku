@@ -28,11 +28,11 @@
                 </div>
               @else
                 <div>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="a"/>a. {{ $item->a }} <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="b"/>b. {{ $item->b }} <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="c"/>c. {{ $item->c }} <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="d"/>d. {{ $item->d }} <br>
-                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="e"/>e. {{ $item->e }} <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="a"/>{{ $item->a }} <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="b"/>{{ $item->b }} <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="c"/>{{ $item->c }} <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="d"/>{{ $item->d }} <br>
+                  <input type="radio" name="no{{ $item->no }}" class="radio radio-primary align-middle m-1" required value="e"/>{{ $item->e }} <br>
                 </div>
               @endif
             </div>

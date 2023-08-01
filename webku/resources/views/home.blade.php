@@ -10,18 +10,16 @@
         @endif
         <h1 class="text-5xl font-bold">Selamat Datang di WebKu!</h1>
         <p class="py-8 font-medium text-base-300">WebKu merupakan website yang dibuat oleh pengembang untuk membantu siswa/siswi kelas 11 tingkat SMK/MA pada mata pelajaran pemrograman web, terutama materi CSS. <br> <br> Silakan baca petunjuk di halaman tentangKu!  </p>
-        <p class="pb-8 text-lg font-bold">Jangan lupa klik tombol 'mulai belajar' di bawah untuk menghitung waktu belajar kamu!</p>
-        {{-- <a href="{{ $pretest == null ? '/test/pretest' : ''}}">
-          <button class="btn" {{ $pretest == null ? '' : 'disabled' }}>Ya</button>
-        </a> --}}
-        @if ($loged == null)
+
+        @if ( auth()->user()->level=="siswa")
+          @if ($loged == null)
+            <p class="pb-8 text-lg font-bold">Jangan lupa klik tombol 'mulai belajar' di bawah untuk menghitung waktu belajar kamu!</p>
             <form action="/start" method="post">
               @csrf
               <button class="btn btn-primary" type="submit">Mulai Belajar</button>
             </form>
+          @endif
         @endif
-        
-        {{-- <a href="/start"><button class="btn btn-primary font-bold">Start</button></a> --}}
       </div>
     </div>
   </div>

@@ -60,12 +60,14 @@
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
           <li class="font-bold text-center">{{ auth()->user()->name }}</li> <br>
           <li><a href="/profile/{{ auth()->user()->id }}">Profile</a></li>
-          <li>
-            <form action="/stop" method="post">
-              @csrf
-              <button type="submit">Berhenti Belajar</button>
-            </form>
-          </li>
+          @if (auth()->user()->level=="siswa")
+            <li>
+              <form action="/stop" method="post">
+                @csrf
+                <button type="submit">Berhenti Belajar</button>
+              </form>
+            </li>
+          @endif
           <li>
             <form action="/logout" method="post">
               @csrf

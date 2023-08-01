@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
+            $table->integer('no');
             $table->string('image')->nullable();
             $table->string('question');
             $table->string('optionImage')->nullable();
